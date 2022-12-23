@@ -8,9 +8,10 @@ const Projects = () => {
     <div className="Projects">
       {images.map((image) => {
         return (
-          <div class={image.className}>
-            <div class="grid">
-              <img src={image.image} alt={image.alt} />
+          <div className={image.className} key={image._id}>
+            <div className="grid">
+              {/* <img src={image.image} alt={image.alt} /> */}
+              <p>{image._id}</p>
             </div>
           </div>
         );

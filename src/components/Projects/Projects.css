@@ -62,6 +62,7 @@
   grid-column: 6 / -1;
   grid-row: 16 / span 6;
 }
+
 .Project9 {
   background-color: #dc3535;
   grid-column: 2 / span 4;
@@ -79,11 +80,53 @@
   grid-column: 1 / span 5;
   grid-row: 26 / span 4;
 }
-
 .Project12 {
   background-color: #fecd70;
   grid-column: 6 / -1;
   grid-row: 27 / span 4;
+}
+
+@media only screen and (max-width: 600px) {
+  .Projects {
+    /* gap: 0.5rem; */
+  }
+
+  .Project2 {
+    grid-column: 5 / -1;
+    grid-row: 1 / span 6;
+  }
+
+  .Project4 {
+    background-color: #cf0a0a;
+    grid-column: 5 / -1;
+    grid-row: 8 / span 4;
+  }
+  .Project6 {
+    background-color: #ada2ff;
+    grid-column: 5 / -1;
+    grid-row: 12 / span 4;
+  }
+
+  .Project8 {
+    background-color: #f49d1a;
+    grid-column: 6 / -1;
+    grid-row: 16 / span 4;
+  }
+  .Project9 {
+    background-color: #dc3535;
+    grid-column: 1 / span 4;
+    grid-row: 21 / span 4;
+  }
+  .Project10 {
+    background-color: #863a6f;
+    grid-column: 5 / -1;
+    grid-row: 21 / span 5;
+  }
+  .Project12 {
+    background-color: #fecd70;
+    grid-column: 6 / -1;
+    grid-row: 26 / span 4;
+  }
 }
 
 .Project13 {
