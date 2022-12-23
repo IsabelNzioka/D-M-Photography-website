@@ -111,7 +111,7 @@ const images = [
   //     image: "/Images/woman1.jpg",
   //     category: "Beauty Photography",
   //     className: "Project16",
-  //   },
+  // },
 ];
 
 export default images;

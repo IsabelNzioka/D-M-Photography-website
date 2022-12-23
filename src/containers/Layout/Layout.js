@@ -1,16 +1,19 @@
 import React from "react";
 
 import SideMenu from "./SideMenu/SideMenu";
+import Navbar from "./Navbar/Navbar";
 
 import "./Layout.css";
+import { AiOutlineMenu } from "react-icons/ai";
 
 const Layout = (props) => {
   return (
     <div className="Main">
       <div className="Nav">
-        <h1 className="Logo">
-          D<span>|</span>M Photography
-        </h1>
+        <Navbar />
+        {/* <div className="Menu"> */}
+        <AiOutlineMenu className="Menu" />
+        {/* </div> */}
       </div>
       <div className="SideMenu">
         <SideMenu />{" "}

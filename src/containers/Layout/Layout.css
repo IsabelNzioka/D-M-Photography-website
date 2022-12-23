@@ -6,9 +6,24 @@
 }
 
 .Nav {
-  /* background-color: blueviolet; */
+  /* background-color: rgb(187, 196, 60); */
   grid-row: 1 / span 1;
   grid-column: 2 / span 1;
+
+  display: grid;
+  grid-template-columns: 1fr 100px;
+  align-items: center;
+}
+
+.Navbar {
+  grid-column: 1 / span 1;
+}
+
+.Menu {
+  grid-column: 2 / span 1;
+  font-size: 2rem;
+  padding-left: 2rem;
+  display: none;
 }
 
 .Logo {
@@ -19,7 +34,7 @@
   color: #f88928;
 }
 .SideMenu {
-  /* background-color: rgb(245, 153, 14); */
+  background-color: rgb(245, 153, 14);
   grid-row: 1 / span 1;
   grid-column: 1 / span 1;
   height: 100vh;
@@ -34,4 +49,17 @@
   grid-column: 2 / span 1;
   grid-row: 2 / span 1;
   /* height: 200vh; */
+}
+
+@media only screen and (max-width: 800px) {
+  .Main {
+    grid-template-columns: 1fr;
+    grid-template-rows: 15vh 1fr;
+  }
+  .SideMenu {
+    display: none;
+  }
+  .Menu {
+    display: block;
+  }
 }
