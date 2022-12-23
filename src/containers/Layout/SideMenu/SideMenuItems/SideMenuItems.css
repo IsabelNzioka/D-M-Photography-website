@@ -1,5 +1,16 @@
+.SideMenuItem {
+  padding-bottom: 0.5rem;
+}
+
 .SideMenuItem a {
   text-decoration: none;
   color: inherit;
-  padding: 0.5rem;
+  transition: all 0.5s;
+}
+
+.SideMenuItem a:hover,
+.SideMenuItem a:active,
+.SideMenuItem a.active {
+  color: #000000;
+  font-weight: 700;
 }

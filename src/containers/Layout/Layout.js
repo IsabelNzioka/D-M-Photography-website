@@ -7,7 +7,11 @@ import "./Layout.css";
 const Layout = (props) => {
   return (
     <div className="Main">
-      <div className="Nav">hi</div>
+      <div className="Nav">
+        <h1 className="Logo">
+          D<span>|</span>M Photography
+        </h1>
+      </div>
       <div className="SideMenu">
         <SideMenu />{" "}
       </div>
