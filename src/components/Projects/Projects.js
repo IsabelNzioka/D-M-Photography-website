@@ -10,8 +10,8 @@ const Projects = () => {
         return (
           <div className={image.className} key={image._id}>
             <div className="grid">
-              {/* <img src={image.image} alt={image.alt} /> */}
-              <p>{image._id}</p>
+              <img src={image.image} alt={image.alt} />
+              {/* <p>{image._id}</p> */}
             </div>
           </div>
         );
