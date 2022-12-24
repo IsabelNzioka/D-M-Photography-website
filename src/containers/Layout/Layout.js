@@ -6,26 +6,31 @@ import SideDrawer from "../SideDrawer.js/SideDrawer";
 
 import "./Layout.css";
 import { AiOutlineMenu } from "react-icons/ai";
+import { BiMenuAltRight } from "react-icons/bi";
 
 const Layout = (props) => {
   const [showDrawer, setShowDrawer] = useState(false);
 
+  const [menu, setMenu] = useState(true);
+
   const closeSideDrawer = () => {
     setShowDrawer(false);
+    setMenu(!menu);
   };
 
   const sideDrawerToggleHandler = () => {
     // this.setState( (prevState ) => { return { showDrawer: !prevState.showDrawer };});
     setShowDrawer(!showDrawer);
+    setMenu(!menu);
   };
 
   return (
     <div className="Main">
       <div className="Nav">
         <Navbar />
-        {/* <div className="Menu"> */}
-        <AiOutlineMenu className="Menu" onClick={sideDrawerToggleHandler} />
-        {/* </div> */}
+        <div className="Menu" onClick={sideDrawerToggleHandler}>
+          {menu ? <AiOutlineMenu /> : <BiMenuAltRight />}
+        </div>
       </div>
 
       <div className="SideMenu">
