@@ -16,7 +16,7 @@ const images = [
   {
     _id: "3",
     alt: "Family Photography",
-    image: "/Images/family.jpg",
+    image: "/Images/friends6.jpg",
     category: "Family Photography",
     className: "Project3",
   },
@@ -45,7 +45,7 @@ const images = [
   {
     _id: "7",
     alt: "Wedding Photography",
-    image: "/Images/wedding.jpg",
+    image: "/Images/wedding8.webp",
     category: "Wedding Photography",
     className: "Project7",
   },
@@ -59,7 +59,7 @@ const images = [
   {
     _id: "9",
     alt: "Couple Photography",
-    image: "/Images/couple1.jpg",
+    image: "/Images/woman5.jpg",
     category: "Couple Photography",
     className: "Project9",
   },
