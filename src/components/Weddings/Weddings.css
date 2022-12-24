@@ -18,84 +18,84 @@
 }
 .Wedding1 {
   border-radius: 5px;
-  background-color: chocolate;
+  background-color: #f3ccff;
 
   grid-column: 1 / span 4;
   grid-row: 1 / span 6;
 }
 .Wedding2 {
   border-radius: 5px;
-  background-color: rgb(31, 15, 3);
+  background-color: #fcffe7;
 
   grid-column: 5 / -1;
   grid-row: 1 / span 6;
 }
 .Wedding3 {
   border-radius: 5px;
-  background-color: rgb(10, 245, 29);
+  background-color: #d8d9cf;
 
   grid-column: 1 / span 5;
   grid-row: 7 / span 5;
 }
 .Wedding4 {
   border-radius: 5px;
-  background-color: rgb(76, 56, 190);
+  background-color: #f5eddc;
 
   grid-column: 6 / -1;
   grid-row: 7 / span 4;
 }
 .Wedding5 {
   border-radius: 5px;
-  background-color: rgb(11, 228, 192);
+  background-color: #cff5e7;
 
   grid-column: 5 / -1;
   grid-row: 12 / span 6;
 }
 .Wedding6 {
   border-radius: 5px;
-  background-color: rgb(233, 13, 178);
+  background-color: #fce2db;
 
   grid-column: 2 / span 3;
   grid-row: 12 / span 5;
 }
 .Wedding7 {
   border-radius: 5px;
-  background-color: rgb(21, 1, 22);
+  background-color: #bfeaf5;
 
   grid-column: 5 / -1;
   grid-row: 18 / span 5;
 }
 .Wedding8 {
   border-radius: 5px;
-  background-color: rgb(211, 165, 131);
+  background-color: #cfd2cf;
 
   grid-column: 1 / span 4;
   grid-row: 17 / span 5;
 }
 .Wedding9 {
   border-radius: 5px;
-  background-color: rgb(245, 10, 10);
+  background-color: #f2e7d5;
 
   grid-column: 5 / span 3;
   grid-row: 23 / span 4;
 }
 .Wedding10 {
   border-radius: 5px;
-  background-color: rgb(133, 145, 136);
+  background-color: #def5e5;
 
   grid-column: 1 / span 4;
   grid-row: 22 / span 5;
 }
 .Wedding11 {
   border-radius: 5px;
-  background-color: rgb(226, 205, 12);
+  background-color: #faeab1;
 
   grid-column: 4 / -1;
   grid-row: 27 / span 6;
 }
 .Wedding12 {
   border-radius: 5px;
-  background-color: rgb(72, 90, 89);
+  background-color: #fff9ca;
 
   grid-column: 1 / span 3;
   grid-row: 27 / span 6;

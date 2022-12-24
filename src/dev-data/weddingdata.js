@@ -45,14 +45,14 @@ const weddingdata = [
   {
     _id: "7",
     alt: "Wedding Photography",
-    image: "/Images/wedding29.webp",
+    image: "/Images/wedding17.webp",
     category: "Wedding Photography",
     className: "Wedding7",
   },
   {
     _id: "8",
     alt: "Wedding Photography",
-    image: "/Images/couple5.jpg",
+    image: "/Images/wedding26.webp",
     category: "Wedding Photography",
     className: "Wedding8",
   },
