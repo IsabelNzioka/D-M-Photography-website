@@ -113,10 +113,17 @@
   }
 }
 
-@media only screen and (max-width: 310px) {
+@media only screen and (max-width: 400px) {
   .Weddings {
     gap: 0.5rem;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(33, 6vh);
   }
 }
+/* @media only screen and (max-width: 310px) {
+  .Weddings {
+    gap: 0.5rem;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(33, 6vh);
+  }
+} */
