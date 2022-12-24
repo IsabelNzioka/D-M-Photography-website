@@ -17,73 +17,86 @@
 }
 
 .Project1 {
-  background-color: #905e96;
+  background-color: #f5eddc;
   grid-row: 1 / span 5;
   grid-column: 1 / span 4;
+
+  border-radius: 5px;
 }
 .Project2 {
-  background-color: #99f10b;
+  background-color: #cfd2cf;
   grid-column: 5 / -1;
   grid-row: 1 / span 7;
+  border-radius: 5px;
 }
 
 .Project3 {
-  background-color: #d1512d;
+  background-color: #eeeeee;
   grid-column: 1 / span 4;
   grid-row: 6 / span 4;
+  border-radius: 5px;
 }
 
 .Project4 {
-  background-color: #cf0a0a;
+  background-color: #b9fff8;
   grid-column: 5 / -1;
   grid-row: 9 / span 4;
+  border-radius: 5px;
 }
 
 .Project5 {
-  background-color: #10a19d;
+  background-color: #fce2db;
   grid-column: 1 / span 4;
   grid-row: 10 / span 6;
+  border-radius: 5px;
 }
 
 .Project6 {
-  background-color: #ada2ff;
+  background-color: #cfd2cf;
   grid-column: 5 / -1;
   grid-row: 13 / span 3;
+  border-radius: 5px;
 }
 
 .Project7 {
-  background-color: #3c2a21;
+  background-color: #ffe5f1;
   grid-column: 1 / span 5;
   grid-row: 16 / span 5;
+  border-radius: 5px;
 }
 
 .Project8 {
-  background-color: #f49d1a;
+  background-color: #d4f6cc;
   grid-column: 6 / -1;
   grid-row: 16 / span 6;
+  border-radius: 5px;
 }
 
 .Project9 {
-  background-color: #dc3535;
+  background-color: #ffdaaf;
   grid-column: 2 / span 4;
   grid-row: 21 / span 5;
+  border-radius: 5px;
 }
 
 .Project10 {
-  background-color: #863a6f;
+  background-color: #f3ccff;
   grid-column: 6 / -1;
   grid-row: 22 / span 5;
+  border-radius: 5px;
 }
 
 .Project11 {
-  background-color: #ffde00;
+  background-color: #f4ead5;
   grid-column: 1 / span 5;
   grid-row: 26 / span 4;
+  border-radius: 5px;
 }
 .Project12 {
-  background-color: #fecd70;
+  background-color: #e5b8f4;
   grid-column: 6 / -1;
   grid-row: 27 / span 4;
+  border-radius: 5px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -99,33 +112,33 @@
   }
 
   .Project4 {
-    background-color: #cf0a0a;
+    /* background-color: #cf0a0a; */
     grid-column: 5 / -1;
     grid-row: 8 / span 4;
   }
   .Project6 {
-    background-color: #ada2ff;
+    /* background-color: #ada2ff; */
     grid-column: 5 / -1;
     grid-row: 12 / span 4;
   }
 
   .Project8 {
-    background-color: #f49d1a;
+    /* background-color: #f49d1a; */
     grid-column: 6 / -1;
     grid-row: 16 / span 4;
   }
   .Project9 {
-    background-color: #dc3535;
+    /* background-color: #dc3535; */
     grid-column: 1 / span 4;
     grid-row: 21 / span 4;
   }
   .Project10 {
-    background-color: #863a6f;
+    /* background-color: #863a6f; */
     grid-column: 5 / -1;
     grid-row: 21 / span 5;
   }
   .Project12 {
-    background-color: #fecd70;
+    /* background-color: #fecd70; */
     grid-column: 6 / -1;
     grid-row: 26 / span 4;
   }
