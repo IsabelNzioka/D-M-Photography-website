@@ -2,7 +2,7 @@
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(30, 10vh);
+  grid-template-rows: repeat(31, 10vh);
 }
 .grid {
   width: 100%;
@@ -89,7 +89,7 @@
 .Project11 {
   background-color: #f4ead5;
   grid-column: 1 / span 5;
-  grid-row: 26 / span 4;
+  grid-row: 26 / span 5;
   border-radius: 5px;
 }
 .Project12 {
@@ -137,6 +137,11 @@
     grid-column: 5 / -1;
     grid-row: 21 / span 5;
   }
+
+  .Project11 {
+    grid-column: 1 / span 5;
+    grid-row: 26 / span 4;
+  }
   .Project12 {
     /* background-color: #fecd70; */
     grid-column: 6 / -1;
@@ -151,3 +156,16 @@
 .Project14 {
   background-color: #e6b325;
 } */
+
+@media only screen and (max-width: 400px) {
+  .Projects {
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(30, 8vh);
+  }
+}
+
+@media only screen and (max-width: 310px) {
+  .Projects {
+    grid-template-rows: repeat(30, 6vh);
+  }
+}

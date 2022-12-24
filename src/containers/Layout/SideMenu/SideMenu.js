@@ -12,8 +12,8 @@ const SideMenu = () => {
     <div>
       <ul className="SideNavItems">
         <SideMenuItems link="/">Projects</SideMenuItems>
-        <SideMenuItems link="/gown">Projects</SideMenuItems>
-        <SideMenuItems link="/babybump">Weddings</SideMenuItems>
+        {/* <SideMenuItems link="/gown">Projects</SideMenuItems> */}
+        <SideMenuItems link="/wedding">Weddings</SideMenuItems>
         <SideMenuItems link="/babyshower">fashion</SideMenuItems>
         <SideMenuItems link="/children">children</SideMenuItems>
         <SideMenuItems link="/couple">About</SideMenuItems>

@@ -82,7 +82,20 @@
 
 @media only screen and (max-width: 500px) {
   .Logo {
-    /* letter-spacing: 2px; */
     font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 310px) {
+  .Main {
+    grid-template-rows: 14vh 1fr;
+  }
+  .Menu {
+    font-size: 1.9rem;
+
+    transition: all 0.2s ease-in;
+  }
+  .Logo {
+    font-size: 1.1rem;
   }
 }
