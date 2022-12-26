@@ -93,14 +93,14 @@
   border-radius: 5px;
 }
 .Project12 {
-  background-color: #e5b8f4;
+  background-color: #e6cfee;
   grid-column: 6 / -1;
   grid-row: 27 / span 4;
   border-radius: 5px;
 }
 
 .Project13 {
-  background-color: #b827e4;
+  background-color: #e3c0ee;
   grid-column: 5 / -1;
 
   grid-row: 32 / span 6;
@@ -108,20 +108,20 @@
 }
 
 .Project14 {
-  background-color: #967121;
+  background-color: #f0e1c1;
   grid-column: 1 / span 4;
 
   grid-row: 32 / span 5;
   border-radius: 5px;
 }
 .Project15 {
-  background-color: #f70a0a;
+  background-color: #f8d4d4;
   grid-column: 1 / span 4;
   grid-row: 37 / span 6;
   border-radius: 5px;
 }
 .Project16 {
-  background-color: #8323a0;
+  background-color: #eabbf8;
   grid-column: 5 / -1;
   grid-row: 38 / span 5;
   border-radius: 5px;

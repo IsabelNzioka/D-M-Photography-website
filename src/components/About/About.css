@@ -212,6 +212,9 @@ element {
     font-size: 1rem;
     padding-left: 0rem;
   }
+  .Paragraph {
+    font-size: 1rem;
+  }
   .Photographer {
     /* display: flex; */
 
