@@ -223,9 +223,9 @@ element {
     /* background-color: #c00e0e; */
   }
   .About3 {
-    /* background-color: #d873a6; */
+    background-color: #d873a6;
     grid-column: 1 / -1;
-    grid-row: 8 / span 10;
+    grid-row: 8 / span 8;
   }
 
   .About1 {
@@ -239,7 +239,7 @@ element {
   .About2 {
     /* background-color: #810ca8; */
     grid-column: 1 / -1;
-    grid-row: 18 / span 7;
+    grid-row: 16 / span 7;
   }
 }
 
@@ -251,12 +251,12 @@ element {
   .About3 {
     /* background-color: #d873a6; */
     grid-column: 1 / -1;
-    grid-row: 8 / span 12;
+    grid-row: 8 / span 10;
   }
   .About2 {
     /* background-color: #810ca8; */
 
-    grid-row: 20 / span 6;
+    grid-row: 18 / span 6;
   }
 }
 
@@ -268,12 +268,12 @@ element {
   .About3 {
     /* background-color: #d873a6; */
 
-    grid-row: 8 / span 13;
+    grid-row: 8 / span 12;
   }
   .About2 {
     /* background-color: #810ca8; */
 
-    grid-row: 21 / span 6;
+    grid-row: 20 / span 6;
   }
 }
 
