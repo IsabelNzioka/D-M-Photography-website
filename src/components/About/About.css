@@ -218,12 +218,12 @@ element {
   .Photographer {
     /* display: flex; */
 
-    padding: 2rem 1rem;
+    padding: 2rem 0.5rem;
     /* text-align: left; */
     /* background-color: #c00e0e; */
   }
   .About3 {
-    background-color: #d873a6;
+    /* background-color: #d873a6; */
     grid-column: 1 / -1;
     grid-row: 8 / span 8;
   }
