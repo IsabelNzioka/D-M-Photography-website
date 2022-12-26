@@ -14,3 +14,17 @@
   color: #000000;
   font-weight: 700;
 }
+
+@media (max-width: 800px) {
+  .SideMenuItem {
+    padding-bottom: 1.2rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .SideMenuItem {
+    padding-bottom: 1rem;
+    font-size: 1.1rem;
+  }
+}

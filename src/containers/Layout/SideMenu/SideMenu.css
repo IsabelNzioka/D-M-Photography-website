@@ -20,3 +20,49 @@
   color: #000000;
   font-size: 1.3rem;
 }
+
+@media (max-width: 800px) {
+  .Icons {
+    font-size: 2.2rem;
+    padding-left: 8rem;
+  }
+
+  .Icon {
+    padding-left: 2rem;
+    transition: all 0.5s;
+  }
+}
+
+@media (max-width: 600px) {
+  .Icons {
+    font-size: 2.2rem;
+    padding-left: 5rem;
+  }
+
+  .Icon {
+    padding-left: 1.5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .Icons {
+    font-size: 2rem;
+    padding-left: 3rem;
+  }
+
+  .Icon {
+    padding-left: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .Icons {
+    padding-top: 1rem;
+    font-size: 1.8rem;
+    right: 1rem;
+  }
+
+  .Icon {
+    padding-left: 0.8rem;
+  }
+}

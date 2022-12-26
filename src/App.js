@@ -4,6 +4,8 @@ import { Routes, Route } from "react-router";
 import Layout from "./containers/Layout/Layout";
 import Projects from "./components/Projects/Projects";
 import Weddings from "./components/Weddings/Weddings";
+import About from "./components/About/About";
+import SliderTestimonials from "./containers/Slider/SliderTestimonials/SliderTestimonials";
 
 import "./App.css";
 
@@ -12,6 +14,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Projects />} />
       <Route path="/wedding" element={<Weddings />} />
+      <Route path="/about" element={<About />} />
     </Routes>
   );
   return (

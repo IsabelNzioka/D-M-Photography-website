@@ -1,0 +1,73 @@
+.Sliderr {
+  height: 56vh;
+  width: 96%;
+  background-color: rgb(244, 248, 248);
+  padding-left: 1rem;
+}
+
+.One {
+  /* height: 20vh; */
+  height: 50vh;
+  width: 400px;
+  background-color: rgb(79, 47, 218);
+
+  display: flex;
+  flex-direction: row;
+}
+
+/* .grid {
+    width: 100%;
+    height: 100%;
+
+  } */
+.OneOne {
+  background-color: chocolate;
+  width: 50%;
+  height: 100%;
+}
+.Sliderr img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 5px;
+}
+element {
+  display: flex;
+}
+
+.OneTwo {
+  background-color: darkmagenta;
+  flex: 1;
+}
+.Two {
+  /* height: 20vh; */
+  width: 400px;
+  background-color: rgb(187, 30, 127);
+  display: flex;
+}
+.Three {
+  /* height: 20vh; */
+  width: 400px;
+  background-color: rgb(53, 211, 14);
+
+  display: flex;
+}
+.Four {
+  /* height: 20vh; */
+  width: 400px;
+  background-color: rgb(211, 151, 22);
+  display: flex;
+}
+.Five {
+  /* height: 20vh; */
+  width: 400px;
+  background-color: rgb(37, 30, 14);
+  display: flex;
+}
+.Six {
+  /* height: 20vh; */
+  width: 400px;
+  background-color: rgb(10, 241, 41);
+  display: flex;
+}
