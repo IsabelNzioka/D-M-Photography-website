@@ -232,12 +232,12 @@
         } */
 
   .CurrentImage {
-    grid-row: 6 / span 17;
+    grid-row: 6 / span 18;
   }
 
   .Modalbottom {
     grid-column: 1 / -1;
-    grid-row: 23 / span 1;
+    grid-row: 24 / span 1;
 
     background-color: rgb(8, 233, 102);
   }
