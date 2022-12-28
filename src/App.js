@@ -5,7 +5,8 @@ import Layout from "./containers/Layout/Layout";
 import Projects from "./components/Projects/Projects";
 import Weddings from "./components/Weddings/Weddings";
 import About from "./components/About/About";
-import SliderTestimonials from "./containers/Slider/SliderTestimonials/SliderTestimonials";
+// import SliderTestimonials from "./containers/Slider/SliderTestimonials/SliderTestimonials";
+import Contact from "./components/Contact/Contact";
 
 import "./App.css";
 
@@ -15,7 +16,7 @@ function App() {
       <Route path="/" element={<Projects />} />
       <Route path="/wedding" element={<Weddings />} />
       <Route path="/about" element={<About />} />
-      <Route path="/slider" element={<SliderTestimonials />} />
+      <Route path="/contact" element={<Contact />} />
     </Routes>
   );
   return (

@@ -16,7 +16,7 @@ const SideMenu = () => {
         <SideMenuItems link="/wedding">Weddings</SideMenuItems>
         <SideMenuItems link="/babyshower">Portraits</SideMenuItems>
         <SideMenuItems link="/children">Family</SideMenuItems>
-        <SideMenuItems link="/about">About|Contact</SideMenuItems>
+        <SideMenuItems link="/about">About</SideMenuItems>
         <SideMenuItems link="/contact">Contact</SideMenuItems>
       </ul>
       <div className="Icons">

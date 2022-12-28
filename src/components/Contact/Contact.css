@@ -1,0 +1,110 @@
+.ContactPage {
+  display: grid;
+
+  /* background-color: aquamarine; */
+  gap: 1rem;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(8, 10vh);
+}
+
+.ContactPicture {
+  grid-column: 1 / span 4;
+  background-color: yellow;
+  grid-row: 1 / span 7;
+}
+
+.ContactPage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 5px;
+}
+
+.ContactForm {
+  grid-column: 5 / -1;
+  grid-row: 1 / span 7;
+
+  /* background-color: darkgray; */
+  border-radius: 5px;
+  padding: 3rem 1rem;
+  /* width: 100%; */
+  /* display: flex;
+  justify-content: center; */
+  /* background-color: rebeccapurple; */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+
+  padding-right: 5rem;
+  /* background-color: brown; */
+  /* width: 100%; */
+}
+
+input,
+textarea {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+label {
+  font-weight: 500;
+  align-self: flex-start;
+}
+
+input {
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  outline: none;
+  border: 1px solid #a9a9a9;
+}
+
+textarea {
+  padding: 1rem;
+  height: 100px;
+
+  outline: none;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.ButtonSubmit {
+  padding: 1rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  width: 200px;
+  font-size: 1rem;
+  letter-spacing: 1px;
+
+  border-radius: 0.5rem;
+  outline: none;
+  border: 1px solid #f88928;
+
+  transition: all 2s;
+}
+
+.ButtonSubmit:hover {
+  background-color: #f88928;
+  letter-spacing: 1.2px;
+}
+
+@media (max-width: 1100px) {
+  .ContactPage {
+    grid-template-rows: repeat(14, 10vh);
+  }
+
+  .ContactPicture {
+    grid-column: 1 / -1;
+
+    grid-row: 1 / span 6;
+  }
+
+  .ContactForm {
+    /* background-color: #f88928; */
+    grid-column: 1 / -1;
+    grid-row: 7 / span 7;
+  }
+}
