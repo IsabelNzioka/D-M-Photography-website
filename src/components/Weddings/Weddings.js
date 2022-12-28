@@ -51,6 +51,7 @@ const Weddings = () => {
               src={weddingdata[slideNumber].image}
               alt={weddingdata[slideNumber].alt}
             />
+            {/* <h1>HI</h1> */}
           </div>
         </Modal>
       )}

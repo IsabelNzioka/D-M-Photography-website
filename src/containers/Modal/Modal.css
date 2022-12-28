@@ -12,40 +12,15 @@
   transition: all 0.3s ease-out;
 
   display: grid;
-  grid-template-columns: 30px 1fr 30px;
+  /* grid-template-columns: 30px 1fr 30px; */
+  grid-template-columns: repeat(20, 1fr);
   grid-template-rows: repeat(19, 5.5vh);
   /* align-items: center; */
 }
 
-@media only screen and (max-width: 1000px) {
-  .Modal {
-    left: 20%;
-  }
-}
-@media only screen and (max-width: 900px) {
-  .Modal {
-    left: 15%;
-  }
-}
-
-@media only screen and (max-width: 800px) {
-  .Modal {
-    grid-template-columns: 35px 1fr 35px;
-    grid-template-rows: repeat(19, 5.2vh);
-    left: 0%;
-    height: 100%;
-    min-width: 400px;
-  }
-}
-
-@media only screen and (max-width: 670px) {
-  .Modal {
-    grid-template-columns: 30px 1fr 30px;
-    grid-template-rows: repeat(19, 5.2vh);
-    left: 0%;
-    height: 100%;
-    min-width: 400px;
-  }
+.Modalbottom {
+  grid-column: 1 / span -1;
+  grid-row: 18 / span 1;
 }
 
 .CloseBtn {
@@ -53,7 +28,7 @@
   cursor: pointer;
   opacity: 0.6;
 
-  grid-column: 2 / span 1;
+  grid-column: 3 / span 16;
   grid-row: 1 / span 1;
   align-self: center;
 }
@@ -63,7 +38,7 @@
   opacity: 0.6;
   /* background-color: rgb(214, 48, 145); */
 
-  grid-column: 3/ -1;
+  grid-column: 19/ -1;
   grid-row: 1 / span 18;
   align-self: center;
 }
@@ -73,21 +48,103 @@
   opacity: 0.6;
   /* background-color: rgb(214, 48, 145); */
 
-  grid-column: 1 / span 1;
+  grid-column: 1 / span 2;
   grid-row: 1 / span 18;
   align-self: center;
-}
-
-.Modalbottom {
-  grid-column: 1 / span -1;
-  grid-row: 18 / span 1;
 }
 
 .CurrentImage {
   /* background-color: rgb(228, 218, 82); */
 
-  grid-column: 2 / span 1;
+  grid-column: 3 / span 16;
   grid-row: 2 / span 17;
+}
+
+/* ////////////////            GRID */
+
+@media only screen and (max-width: 1100px) {
+  .Modal {
+    /* left: 20%; */
+    left: calc(50% - 400px);
+  }
+}
+@media only screen and (max-width: 900px) {
+  .Modal {
+    /* left: 15%; */
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .Modal {
+    /* grid-template-columns: 35px 1fr 35px; */
+    /* grid-template-rows: repeat(19, 5.2vh); */
+
+    /* grid-template-columns: repeat(10, 1fr); */
+    /* left: 0%; */
+    height: 100%;
+    width: 100%;
+    left: 0%;
+    /* left: calc(50% - 400px); */
+    /* min-width: 400px; */
+  }
+
+  /* ///////////////////// */
+
+  .CloseBtn {
+    /* background-color: chartreuse; */
+    cursor: pointer;
+    opacity: 0.6;
+
+    grid-column: 3 / span 16;
+    grid-row: 1 / span 1;
+    align-self: center;
+  }
+
+  .NextSlide {
+    cursor: pointer;
+    opacity: 0.6;
+    /* background-color: rgb(214, 48, 145); */
+
+    grid-column: 19/ -1;
+    grid-row: 1 / span 18;
+    align-self: center;
+  }
+
+  .PrevSlide {
+    cursor: pointer;
+    opacity: 0.6;
+    /* background-color: rgb(214, 48, 145); */
+
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 18;
+    align-self: center;
+  }
+
+  .CurrentImage {
+    /* background-color: rgb(228, 218, 82); */
+
+    grid-column: 4 / span 15;
+    grid-row: 3 / span 16;
+  }
+
+  /* /////////////////////////// */
+}
+
+@media only screen and (max-width: 670px) {
+  /* .Modal {
+    grid-template-columns: 30px 1fr 30px;
+    grid-template-rows: repeat(19, 5.2vh);
+    left: 0%;
+    height: 100%;
+    min-width: 400px;
+  } */
+
+  .CurrentImage {
+    /* background-color: rgb(228, 218, 82);
+
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 17; */
+  }
 }
 
 .CloseBtn:hover,
