@@ -208,7 +208,7 @@
   /* ////////////////////////////////////////////////// */
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 340px) {
   .Modal {
     grid-template-columns: repeat(20, 1fr);
     grid-template-rows: repeat(30, 2.5vh);
@@ -232,7 +232,7 @@
         } */
 
   .CurrentImage {
-    grid-row: 6 / span 20;
+    grid-row: 6 / span 22;
   }
 
   .Modalbottom {
