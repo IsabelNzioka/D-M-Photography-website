@@ -1,16 +1,68 @@
-import React from "react";
+import React, { useState } from "react";
+import Modal from "../../containers/Modal/Modal";
 import images from "../../dev-data/data";
 
 import "./Projects.css";
 
 const Projects = () => {
+  const [slideNumber, setSlideNumber] = useState(0);
+  const [openModal, setOpenModal] = useState(false);
+
+  const handleOpenModal = (index) => {
+    setSlideNumber(index);
+    setOpenModal(true);
+  };
+
+  //next image
+  const nextSlide = () => {
+    slideNumber + 1 === images.length
+      ? setSlideNumber(0)
+      : setSlideNumber(slideNumber + 1);
+  };
+
+  // showmodal to constrol backdrop
+  const showModal = () => {
+    setOpenModal(!openModal);
+  };
+
+  //previous image
+  const prevSlide = () => {
+    slideNumber === 0
+      ? setSlideNumber(images.length - 1)
+      : setSlideNumber(slideNumber - 1);
+  };
+  const closeModal = () => {
+    setOpenModal(false);
+  };
+
   return (
     <div className="Projects">
-      {images.map((image) => {
+      {openModal && (
+        <Modal
+          show={showModal}
+          nextSlide={nextSlide}
+          prevSlide={prevSlide}
+          closeModal={closeModal}
+        >
+          <div className="FullImage">
+            <img
+              src={images[slideNumber].image}
+              alt={images[slideNumber].alt}
+            />
+            {/* <h1>HI</h1> */}
+          </div>
+        </Modal>
+      )}
+      {images.map((image, index) => {
         return (
-          <div className={image.className} key={image._id}>
+          <div
+            className={image.className}
+            key={index}
+            onClick={() => handleOpenModal(index)}
+          >
             <div className="grid">
               <img src={image.image} alt={image.alt} />
+              {/* <p>{image._id}</p> */}
             </div>
           </div>
         );
