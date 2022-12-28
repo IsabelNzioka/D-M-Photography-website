@@ -1,15 +1,66 @@
-import React from "react";
+import React, { useState } from "react";
 
 import weddingdata from "../../dev-data/weddingdata";
+
+import Modal from "../../containers/Modal/Modal";
 
 import "./Weddings.css";
 
 const Weddings = () => {
+  const [slideNumber, setSlideNumber] = useState(0);
+  const [openModal, setOpenModal] = useState(false);
+
+  const handleOpenModal = (index) => {
+    setSlideNumber(index);
+    setOpenModal(true);
+  };
+
+  //next image
+  const nextSlide = () => {
+    slideNumber + 1 === weddingdata.length
+      ? setSlideNumber(0)
+      : setSlideNumber(slideNumber + 1);
+  };
+
+  // showmodal to constrol backdrop
+  const showModal = () => {
+    setOpenModal(!openModal);
+  };
+
+  //previous image
+  const prevSlide = () => {
+    slideNumber === 0
+      ? setSlideNumber(weddingdata.length - 1)
+      : setSlideNumber(slideNumber - 1);
+  };
+  const closeModal = () => {
+    setOpenModal(false);
+  };
+
   return (
     <div className="Weddings">
-      {weddingdata.map((image) => {
+      {openModal && (
+        <Modal
+          show={showModal}
+          nextSlide={nextSlide}
+          prevSlide={prevSlide}
+          closeModal={closeModal}
+        >
+          <div className="FullImage">
+            <img
+              src={weddingdata[slideNumber].image}
+              alt={weddingdata[slideNumber].alt}
+            />
+          </div>
+        </Modal>
+      )}
+      {weddingdata.map((image, index) => {
         return (
-          <div className={image.className} key={image._id}>
+          <div
+            className={image.className}
+            key={index}
+            onClick={() => handleOpenModal(index)}
+          >
             <div className="grid">
               <img src={image.image} alt={image.alt} />
               {/* <p>{image._id}</p> */}

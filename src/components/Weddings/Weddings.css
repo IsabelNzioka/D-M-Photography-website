@@ -16,6 +16,13 @@
   display: block;
   border-radius: 5px;
 }
+
+.FullImage {
+  width: 100%;
+  height: 100%;
+}
+
+/* ///////////////////////////// Grids */
 .Wedding1 {
   border-radius: 5px;
   background-color: #f3ccff;
