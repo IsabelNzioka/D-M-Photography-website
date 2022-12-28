@@ -31,7 +31,7 @@ const Contact = () => {
   return (
     <div className="ContactPage">
       <div className="ContactPicture">
-        <div class="grid">
+        <div className="grid">
           {/* <p>1</p> */}
           <img src="Images/woman1.jpg" alt="Portraits" />
         </div>

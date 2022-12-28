@@ -2,7 +2,7 @@
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(26, 10vh);
+  grid-template-rows: repeat(14, 10vh);
 }
 
 .grid {
@@ -147,7 +147,7 @@ element {
 }
 @media (max-width: 800px) {
   .About {
-    grid-template-rows: repeat(33, 9vh);
+    grid-template-rows: repeat(15, 9vh);
   }
   .About3 {
     /* background-color: #d873a6; */
@@ -166,6 +166,7 @@ element {
 
 @media (max-width: 600px) {
   .About {
+    grid-template-rows: repeat(25, 9vh);
     gap: 0.5rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
