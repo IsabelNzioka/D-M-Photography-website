@@ -123,8 +123,8 @@
   .CurrentImage {
     /* background-color: rgb(228, 218, 82); */
 
-    grid-column: 4 / span 15;
-    grid-row: 3 / span 16;
+    grid-column: 3 / span 16;
+    grid-row: 3 / span 15;
   }
 
   /* /////////////////////////// */
