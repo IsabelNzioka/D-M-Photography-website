@@ -2,31 +2,26 @@
   position: fixed;
   z-index: 500;
   background-color: rgb(255, 253, 253);
-  /* width: 1000px; */
+
   border: 1px solid #ccc;
   box-shadow: 1px 1px 1px black;
-  /* min-width: 500px; */
 
   top: 1px;
   left: 30%;
   transition: all 0.3s ease-out;
 
   display: grid;
-  /* grid-template-columns: 30px 1fr 30px; */
+
   grid-template-columns: repeat(20, 1fr);
   grid-template-rows: repeat(19, 5.5vh);
-  /* align-items: center; */
 }
 
 .Modalbottom {
   grid-column: 1 / -1;
   grid-row: 20 / span 1;
-
-  background-color: rgb(255, 177, 146);
 }
 
 .CloseBtn {
-  /* background-color: chartreuse; */
   cursor: pointer;
   opacity: 0.6;
 
@@ -38,7 +33,6 @@
 .NextSlide {
   cursor: pointer;
   opacity: 0.6;
-  /* background-color: rgb(214, 48, 145); */
 
   grid-column: 19/ -1;
   grid-row: 1 / span 18;
@@ -48,7 +42,6 @@
 .PrevSlide {
   cursor: pointer;
   opacity: 0.6;
-  /* background-color: rgb(214, 48, 145); */
 
   grid-column: 1 / span 2;
   grid-row: 1 / span 18;
@@ -81,7 +74,6 @@
 
 @media only screen and (max-width: 800px) {
   .Modal {
-    grid-template-columns: repeat(20, 1fr);
     grid-template-rows: repeat(19, 5vh);
     height: 100%;
     width: 100%;
@@ -112,26 +104,8 @@
 
 @media only screen and (max-width: 650px) {
   .Modal {
-    grid-template-columns: repeat(20, 1fr);
     grid-template-rows: repeat(19, 4.5vh);
-    height: 100%;
-    width: 100%;
-    left: 0%;
   }
-
-  /* //////////////////////////////////////////////// */
-  /* .CloseBtn {
-    grid-column: 2 / span 18;
-    grid-row: 1 / span 2;
-  }
-
-  .NextSlide {
-    grid-column: 20/ -1;
-  }
-
-  .PrevSlide {
-    grid-column: 1 / span 1;
-  } */
 
   .CurrentImage {
     grid-column: 2 / span 18;
@@ -143,26 +117,11 @@
 
 @media only screen and (max-width: 520px) {
   .Modal {
-    grid-template-columns: repeat(20, 1fr);
     grid-template-rows: repeat(19, 4vh);
-    height: 100%;
-    width: 100%;
-    left: 0%;
   }
   .CloseBtn {
     grid-row: 1 / span 3;
   }
-
-  /* //////////////////////////////////////////////// */
-  /* 
-  
-    .NextSlide {
-      grid-column: 20/ -1;
-    }
-  
-    .PrevSlide {
-      grid-column: 1 / span 1;
-    } */
 
   .CurrentImage {
     grid-row: 4 / span 16;
@@ -173,36 +132,18 @@
 
 @media only screen and (max-width: 420px) {
   .Modal {
-    grid-template-columns: repeat(20, 1fr);
     grid-template-rows: repeat(25, 3.5vh);
-    height: 100%;
-    width: 100%;
-    left: 0%;
   }
   .CloseBtn {
     grid-row: 1 / span 5;
   }
-
-  /* //////////////////////////////////////////////// */
-  /* 
-    
-      .NextSlide {
-        grid-column: 20/ -1;
-      }
-    
-      .PrevSlide {
-        grid-column: 1 / span 1;
-      } */
 
   .CurrentImage {
     grid-row: 5 / span 16;
   }
 
   .Modalbottom {
-    grid-column: 1 / -1;
     grid-row: 21 / span 1;
-
-    background-color: rgb(197, 65, 230);
   }
 
   /* ////////////////////////////////////////////////// */
@@ -210,26 +151,11 @@
 
 @media only screen and (max-width: 360px) {
   .Modal {
-    grid-template-columns: repeat(20, 1fr);
     grid-template-rows: repeat(30, 2.5vh);
-    height: 100%;
-    width: 100%;
-    left: 0%;
   }
   .CloseBtn {
     grid-row: 1 / span 6;
   }
-
-  /* //////////////////////////////////////////////// */
-  /* 
-      
-        .NextSlide {
-          grid-column: 20/ -1;
-        }
-      
-        .PrevSlide {
-          grid-column: 1 / span 1;
-        } */
 
   .CurrentImage {
     grid-row: 6 / span 23;
@@ -239,7 +165,32 @@
     grid-column: 1 / -1;
     grid-row: 29 / span 1;
 
-    background-color: rgb(8, 233, 102);
+    /* background-color: rgb(8, 233, 102); */
+  }
+
+  /* ////////////////////////////////////////////////// */
+}
+
+@media only screen and (max-width: 340px) {
+  .Modal {
+    grid-template-rows: repeat(40, 2vh);
+  }
+
+  .CurrentImage {
+    grid-row: 6 / span 24;
+  }
+
+  .Modalbottom {
+    /* grid-column: 1 / -1; */
+    grid-row: 30 / span 1;
+  }
+
+  /* ////////////////////////////////////////////////// */
+}
+
+@media only screen and (max-width: 300px) {
+  .Modal {
+    grid-template-rows: repeat(40, 1.9vh);
   }
 
   /* ////////////////////////////////////////////////// */
