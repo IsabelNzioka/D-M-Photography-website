@@ -211,7 +211,7 @@
 @media only screen and (max-width: 360px) {
   .Modal {
     grid-template-columns: repeat(20, 1fr);
-    grid-template-rows: repeat(25, 3vh);
+    grid-template-rows: repeat(30, 2.5vh);
     height: 100%;
     width: 100%;
     left: 0%;
@@ -232,12 +232,12 @@
         } */
 
   .CurrentImage {
-    grid-row: 6 / span 18;
+    grid-row: 6 / span 20;
   }
 
   .Modalbottom {
     grid-column: 1 / -1;
-    grid-row: 24 / span 1;
+    grid-row: 27 / span 1;
 
     background-color: rgb(8, 233, 102);
   }
