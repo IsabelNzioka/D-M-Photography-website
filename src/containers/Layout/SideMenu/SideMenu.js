@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import SideMenuItems from "./SideMenuItems/SideMenuItems";
 
 import { AiOutlineInstagram } from "react-icons/ai";
@@ -20,9 +21,18 @@ const SideMenu = () => {
         <SideMenuItems link="/contact">Contact</SideMenuItems>
       </ul>
       <div className="Icons">
-        <AiOutlineInstagram className="Icon" />
-        <AiOutlineTwitter className="Icon" />
-        <AiOutlineMail className="Icon" />
+        <Link to="/contact">
+          {" "}
+          <AiOutlineInstagram className="Icon" />
+        </Link>
+        <Link to="/contact">
+          {" "}
+          <AiOutlineTwitter className="Icon" />
+        </Link>
+        <Link to="/contact">
+          {" "}
+          <AiOutlineMail className="Icon" />
+        </Link>
       </div>
     </div>
   );

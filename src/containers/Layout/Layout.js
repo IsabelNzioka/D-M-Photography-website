@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import SideMenu from "./SideMenu/SideMenu";
 import Navbar from "./Navbar/Navbar";
 import SideDrawer from "../SideDrawer.js/SideDrawer";
+import Footer from "./Footer/Footer";
 
 import "./Layout.css";
 import { AiOutlineMenu } from "react-icons/ai";
@@ -38,6 +39,10 @@ const Layout = (props) => {
       </div>
       <div className="Children">{props.children}</div>
       <SideDrawer open={showDrawer} closed={closeSideDrawer} />
+
+      <div className="Footer">
+        <Footer />
+      </div>
     </div>
   );
 };

@@ -1,0 +1,63 @@
+.MyFooter {
+  padding: 4rem 5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: aliceblue;
+  gap: 1rem;
+}
+.Header {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  color: aliceblue;
+}
+.FooterIcons {
+  font-size: 1.9rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.ToContact {
+  background-color: #f88928;
+  border-radius: 5px;
+  font-size: 1rem;
+  padding: 0.4rem 1rem;
+  transition: all 0.5s;
+}
+.ToContact:hover {
+  background-color: aliceblue;
+  color: #f88928;
+}
+
+.FooterIcons a {
+  text-decoration: none;
+  color: inherit;
+}
+.FooterIcon {
+  color: #f88928;
+  /* padding-left: 1rem; */
+  transition: all 0.5s;
+}
+
+.FooterIcon:hover {
+  color: aliceblue;
+  font-size: 1.5rem;
+}
+.Mail {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.Copyright span {
+  color: #f88928;
+}
+
+hr {
+  width: 100%;
+  color: aliceblue;
+}
+
+@media (max-width: 800px) {
+}
