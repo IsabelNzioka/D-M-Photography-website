@@ -91,9 +91,4 @@ hr {
   .ToContact {
     font-size: 0.9rem;
   }
-
-  .FooterIcon:hover {
-    color: #f88928;
-    font-size: 1.5rem;
-  }
 }

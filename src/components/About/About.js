@@ -30,8 +30,7 @@ const About = () => {
           </h2>
 
           <p className="Paragraph__important">
-            Hello, I am <span> Dennis Mutembei</span>, A Photographer based in
-            Nairobi.
+            Hello, I am <span> Dennis</span>, A Photographer based in Nairobi.
           </p>
           <p className="Paragraph">
             I aspire to capture authentic, intimate, and organic moments that
