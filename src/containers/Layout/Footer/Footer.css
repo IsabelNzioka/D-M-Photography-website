@@ -65,4 +65,35 @@ hr {
 
     gap: 1rem;
   }
+  .Copyright {
+    font-size: 0.9rem;
+  }
+
+  .Mail {
+    font-weight: 400;
+    letter-spacing: 1.1px;
+  }
+}
+
+@media (max-width: 400px) {
+  .MyFooter {
+    padding: 4rem 1rem 1rem;
+  }
+
+  .Copyright {
+    font-size: 0.8rem;
+  }
+
+  .FooterIcons {
+    font-size: 1.4rem;
+  }
+
+  .ToContact {
+    font-size: 0.9rem;
+  }
+
+  .FooterIcon:hover {
+    color: #f88928;
+    font-size: 1.5rem;
+  }
 }
