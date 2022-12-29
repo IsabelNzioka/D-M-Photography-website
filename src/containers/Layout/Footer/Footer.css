@@ -59,5 +59,10 @@ hr {
   color: aliceblue;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 600px) {
+  .MyFooter {
+    padding: 4rem 2rem 1rem;
+
+    gap: 1rem;
+  }
 }
