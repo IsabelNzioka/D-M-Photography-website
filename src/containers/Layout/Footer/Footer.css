@@ -20,15 +20,15 @@
 }
 
 .ToContact {
-  background-color: #f88928;
+  background-color: aliceblue;
   border-radius: 5px;
   font-size: 1rem;
   padding: 0.4rem 1rem;
   transition: all 0.5s;
 }
 .ToContact:hover {
-  background-color: aliceblue;
-  color: #f88928;
+  background-color: #f88928;
+  color: aliceblue;
 }
 
 .FooterIcons a {
@@ -36,13 +36,13 @@
   color: inherit;
 }
 .FooterIcon {
-  color: #f88928;
+  color: aliceblue;
   /* padding-left: 1rem; */
   transition: all 0.5s;
 }
 
 .FooterIcon:hover {
-  color: aliceblue;
+  color: #f88928;
   font-size: 1.5rem;
 }
 .Mail {
