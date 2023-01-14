@@ -4,6 +4,9 @@ import weddingdata from "../../dev-data/weddingdata";
 
 import Modal from "../../containers/Modal/Modal";
 
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
+
 import "./Weddings.css";
 
 const Weddings = () => {
@@ -63,8 +66,13 @@ const Weddings = () => {
             onClick={() => handleOpenModal(index)}
           >
             <div className="grid">
-              <img src={image.image} alt={image.alt} />
-              {/* <p>{image._id}</p> */}
+              <LazyLoadImage
+                effect="blur"
+                alt={image.alt}
+                height="100%"
+                src={image.image} // use normal <img> attributes as props
+                width="100%"
+              />
             </div>
           </div>
         );

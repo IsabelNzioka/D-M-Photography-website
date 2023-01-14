@@ -3,6 +3,8 @@ import React from "react";
 // import photographer from "../Images/couple1.jpg";
 // import photographer from "../../../public/Images/couple1.jpg";
 import SliderTestimonials from "../../containers/Slider/SliderTestimonials/SliderTestimonials";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 import "./About.css";
 
@@ -12,13 +14,28 @@ const About = () => {
       <div class="About1">
         <div class="grid">
           {/* <p>1</p> */}
-          <img src="Images/dennis.jpg" alt="The Photographer" />
+          <LazyLoadImage
+            effect="blur"
+            alt="The Photographer"
+            height="100%"
+            src="Images/dennis.jpg" // use normal <img> attributes as props
+            width="100%"
+          />
+
+          {/* <img src="Images/dennis.jpg" alt="The Photographer" /> */}
         </div>
       </div>
 
       <div class="About2">
         <div class="grid">
-          <img src="Images/dennis2.jpg" alt="The Photographer" />
+          <LazyLoadImage
+            effect="blur"
+            alt="The Photographer"
+            height="100%"
+            src="Images/dennis2.jpg" // use normal <img> attributes as props
+            width="100%"
+          />
+          {/* <img src="Images/dennis2.jpg" alt="The Photographer" /> */}
         </div>
       </div>
 

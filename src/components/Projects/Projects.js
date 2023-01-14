@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import Modal from "../../containers/Modal/Modal";
 import images from "../../dev-data/data";
 
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
+
 import "./Projects.css";
 
 const Projects = () => {
@@ -61,7 +64,14 @@ const Projects = () => {
             onClick={() => handleOpenModal(index)}
           >
             <div className="grid">
-              <img src={image.image} alt={image.alt} />
+              <LazyLoadImage
+                effect="blur"
+                alt={image.alt}
+                height="100%"
+                src={image.image} // use normal <img> attributes as props
+                width="100%"
+              />
+              {/* <img src={image.image} alt={image.alt} /> */}
               {/* <p>{image._id}</p> */}
             </div>
           </div>
