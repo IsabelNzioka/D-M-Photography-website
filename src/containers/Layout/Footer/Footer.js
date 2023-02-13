@@ -5,13 +5,31 @@ import { AiOutlineInstagram } from "react-icons/ai";
 import { AiOutlineTwitter } from "react-icons/ai";
 import { AiOutlineMail } from "react-icons/ai";
 
+import { motion } from "framer-motion";
+
 import "./Footer.css";
 
+const childVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+
+    transition: { duration: 1 },
+    // transition={ease: [0.17, 0.67, 0.83, 0.67] },
+  },
+};
 const Footer = () => {
   return (
-    <div className="MyFooter">
-      <div className="Header">Get In Touch</div>
-      <div className="FooterIcons">
+    <motion.div
+      className="MyFooter"
+      initial="hidden"
+      whileInView={"visible"}
+      viewport={{ once: true, amount: 0.2 }}
+    >
+      <motion.div className="Header" variants={childVariants}>
+        Get In Touch
+      </motion.div>
+      <motion.div className="FooterIcons" variants={childVariants}>
         <Link to="/contact">
           {" "}
           <AiOutlineInstagram className="FooterIcon" />
@@ -25,8 +43,10 @@ const Footer = () => {
           {" "}
           <Link to="/contact">Contact</Link>
         </button>
-      </div>
-      <div className="Mail">dennis@gmail.com</div>
+      </motion.div>
+      <motion.div className="Mail" variants={childVariants}>
+        dennis@gmail.com
+      </motion.div>
 
       <div className="Copyright">
         <hr />
@@ -34,7 +54,7 @@ const Footer = () => {
           @copyright 2022 D<span>|</span>M Photography
         </p>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

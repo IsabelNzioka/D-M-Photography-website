@@ -7,6 +7,7 @@ import Success from "./Success/Success";
 
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
+import { motion } from "framer-motion";
 
 import {
   Routes,
@@ -23,6 +24,26 @@ import {
 import ContactInfo from "./ContactInfo";
 
 import "./Contact.css";
+
+const containerVariants = {
+  hidden: {
+    opacity: 0,
+    // x: "100vw",
+    x: 100,
+  },
+  visible: {
+    opacity: 1,
+    // x: 0,
+    x: 0,
+    transition: {
+      type: "spring",
+      mass: 1,
+      damping: 25,
+      when: "beforeChildren",
+      staggerChildren: 0.4,
+    },
+  },
+};
 
 const Contact = () => {
   // const form = useRef();
@@ -209,14 +230,19 @@ const Contact = () => {
   // console.log("llllllllllllllllllllll", location.pathname);
   let element = useRoutes(routes);
   return (
-    <div className="ContactPage">
+    <motion.div
+      className="ContactPage"
+      variants={containerVariants}
+      initial="hidden"
+      animate="visible"
+    >
       <div className="ContactPicture">
         <div className="grid">
           <img src="Images/woman4.jpg" alt="Potraits" />
         </div>
       </div>
       {element}
-    </div>
+    </motion.div>
   );
 };
 

@@ -4,8 +4,29 @@ import images from "../../dev-data/data";
 
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
+import { motion } from "framer-motion";
 
 import "./Projects.css";
+
+const containerVariants = {
+  hidden: {
+    opacity: 0,
+    // x: "100vw",
+    x: 100,
+  },
+  visible: {
+    opacity: 1,
+    // x: 0,
+    x: 0,
+    transition: {
+      type: "spring",
+      mass: 1,
+      damping: 25,
+      when: "beforeChildren",
+      staggerChildren: 0.4,
+    },
+  },
+};
 
 const Projects = () => {
   const [slideNumber, setSlideNumber] = useState(0);
@@ -39,7 +60,12 @@ const Projects = () => {
   };
 
   return (
-    <div className="Projects">
+    <motion.div
+      className="Projects"
+      variants={containerVariants}
+      initial="hidden"
+      animate="visible"
+    >
       {openModal && (
         <Modal
           show={showModal}
@@ -173,7 +199,7 @@ const Projects = () => {
           <p> 14</p>{" "}
         </div>
       </div> */}
-    </div>
+    </motion.div>
   );
 };
 

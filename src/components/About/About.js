@@ -5,12 +5,48 @@ import React from "react";
 import SliderTestimonials from "../../containers/Slider/SliderTestimonials/SliderTestimonials";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
+import { motion } from "framer-motion";
 
 import "./About.css";
 
+const containerVariants = {
+  hidden: {
+    opacity: 0,
+    // x: "100vw",
+    x: 100,
+  },
+  visible: {
+    opacity: 1,
+    // x: 0,
+    x: 0,
+    transition: {
+      type: "spring",
+      mass: 1,
+      damping: 25,
+      when: "beforeChildren",
+      staggerChildren: 0.4,
+    },
+  },
+};
+
+const childVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+
+    transition: { duration: 1 },
+    // transition={ease: [0.17, 0.67, 0.83, 0.67] },
+  },
+};
+
 const About = () => {
   return (
-    <div className="About">
+    <motion.div
+      className="About"
+      variants={containerVariants}
+      initial="hidden"
+      animate="visible"
+    >
       <div class="About1">
         <div class="grid">
           {/* <p>1</p> */}
@@ -39,31 +75,36 @@ const About = () => {
         </div>
       </div>
 
-      <div class="About3">
-        <div class="Photographer">
-          <h2 className="Heading__primary">
+      <motion.div
+        class="About3"
+        initial="hidden"
+        whileInView={"visible"}
+        viewport={{ once: true, amount: 0.2 }}
+      >
+        <motion.div class="Photographer">
+          <motion.h2 className="Heading__primary" variants={childVariants}>
             {" "}
             Meet your Photographer <span></span>
-          </h2>
+          </motion.h2>
 
-          <p className="Paragraph__important">
+          <motion.p className="Paragraph__important" variants={childVariants}>
             Hello, I am <span> Dennis</span>, A Photographer based in Nairobi.
-          </p>
-          <p className="Paragraph">
+          </motion.p>
+          <motion.p className="Paragraph" variants={childVariants}>
             I aspire to capture authentic, intimate, and organic moments that
             represent your personal story. My style is warm, rich, and often
             moody, while my images represent laughter, kisses, and genuine
             personality. It is an honor to document your story and I treat every
             single one with the love and respect you deserve. Let's be real for
             a second...life goes way too fast.
-          </p>
+          </motion.p>
 
-          <p className="Paragraph">
+          <motion.p className="Paragraph" variants={childVariants}>
             I am drawn to the beauty that each person adds to the world, and I
             would love to capture that beauty for you.
-          </p>
-        </div>
-      </div>
+          </motion.p>
+        </motion.div>
+      </motion.div>
 
       {/* <div class="About4">
         <div class="grid">
@@ -102,7 +143,7 @@ const About = () => {
           {/* <img src="Images/fam1.jpg" alt="The Photographer" /> */}
       {/* <SliderTestimonials /> */}
       {/* </div>    </div>*/}
-    </div>
+    </motion.div>
   );
 };
 

@@ -8,6 +8,27 @@ import Footer from "./Footer/Footer";
 import "./Layout.css";
 import { AiOutlineMenu } from "react-icons/ai";
 import { BiMenuAltRight } from "react-icons/bi";
+import { motion } from "framer-motion";
+
+const containerVariants = {
+  hidden: {
+    opacity: 0,
+    // x: "100vw",
+    y: "10vh",
+  },
+  visible: {
+    opacity: 1,
+    // x: 0,
+    y: 0,
+    transition: {
+      type: "spring",
+      mass: 1,
+      damping: 25,
+      when: "beforeChildren",
+      staggerChildren: 0.4,
+    },
+  },
+};
 
 const Layout = (props) => {
   const [showDrawer, setShowDrawer] = useState(false);
@@ -37,7 +58,14 @@ const Layout = (props) => {
       <div className="SideMenu">
         <SideMenu />{" "}
       </div>
-      <div className="Children">{props.children}</div>
+      <motion.div
+        className="Children"
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+      >
+        {props.children}
+      </motion.div>
       <SideDrawer open={showDrawer} closed={closeSideDrawer} />
 
       <div className="Footer">

@@ -1,7 +1,9 @@
 .SideNavItems {
   list-style: none;
 
-  padding-top: 7rem;
+  padding-top: 10rem;
+  /* background-color: #f88928; */
+  padding-bottom: 2rem;
 }
 
 .Icons {
@@ -19,6 +21,11 @@
 .Icon:hover {
   color: #000000;
   font-size: 1.3rem;
+}
+@media (min-width: 1600px) {
+  .SideNavItems {
+    padding-top: 20rem;
+  }
 }
 
 @media (max-width: 800px) {
