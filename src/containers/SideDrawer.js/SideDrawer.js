@@ -14,17 +14,17 @@ import {
 } from "react-icons/ai";
 import { Link } from "react-router-dom";
 
-const childVariants = {
-  hidden: { opacity: 0 },
+const containerVariants = {
+  hidden: {
+    opacity: 0,
+  },
   visible: {
     opacity: 1,
-
     transition: {
-      //  duration: 1
-      // delay: 0.1,
-      // duration: 0.5,
+      // delay: 0.3,
+      // duration: 1.5,
       when: "beforeChildren",
-      staggerChildren: 0.3,
+      staggerChildren: 0.2,
     },
   },
 };
@@ -46,34 +46,64 @@ const sectionVariants = {
   },
 };
 
+const childVariants = {
+  hidden: {
+    opacity: 0,
+
+    x: -100,
+  },
+  visible: {
+    opacity: 1,
+    x: 0,
+
+    transition: {
+      // delay: 3,
+      // duration: 0.4,
+    },
+  },
+};
+
 const SideDrawer = (props) => {
   let attachedClasses = ["SideDrawer", "Close"];
   if (props.open) {
     attachedClasses = ["SideDrawer", "Open"];
   }
   return (
-    <div>
+    <motion.div
+      variants={containerVariants}
+      initial="hidden"
+      animate={props.open ? "visible" : "hidden"}
+    >
       <Backdrop show={props.open} clicked={props.closed} />
       {/* <div className={attachedClasses.join(" ")} onClick={props.closed}> */}
       {/* <SideMenu /> */}
       {/* </div> */}
-      <motion.div
-        className={attachedClasses.join(" ")}
-        onClick={props.closed}
-        // variants={childVariants}
-        initial="hidden"
-        animate={props.open ? "visible" : "hidden"}
-      >
-        <motion.ul className="SideNavItems" variants={sectionVariants}>
+      <motion.div className={attachedClasses.join(" ")} onClick={props.closed}>
+        <motion.ul className="SideNavItems">
           {" "}
-          <SideMenuItems link="/">Projects</SideMenuItems>
-          <SideMenuItems link="/wedding">Weddings</SideMenuItems>{" "}
-          <SideMenuItems link="/wedding">Portraits</SideMenuItems>{" "}
-          <SideMenuItems link="/">Family</SideMenuItems>
-          <SideMenuItems link="/about">About</SideMenuItems>{" "}
-          <SideMenuItems link="/contact">Contact</SideMenuItems>
+          <motion.div variants={childVariants}>
+            <SideMenuItems link="/">Projects</SideMenuItems>
+          </motion.div>
+          <motion.div variants={childVariants}>
+            {" "}
+            <SideMenuItems link="/wedding">Weddings</SideMenuItems>{" "}
+          </motion.div>
+          <motion.div variants={childVariants}>
+            {" "}
+            <SideMenuItems link="/wedding">Portraits</SideMenuItems>{" "}
+          </motion.div>
+          <motion.div variants={childVariants}>
+            <SideMenuItems link="/">Family</SideMenuItems>
+          </motion.div>
+          <motion.div variants={childVariants}>
+            <SideMenuItems link="/about">About</SideMenuItems>{" "}
+          </motion.div>
+          <motion.div variants={childVariants}>
+            {" "}
+            <SideMenuItems link="/contact">Contact</SideMenuItems>
+          </motion.div>
         </motion.ul>
-        <motion.div className="Icons">
+        <motion.div className="Icons" variants={childVariants}>
           <Link to="/contact">
             {" "}
             <AiOutlineInstagram className="Icon" />
@@ -90,7 +120,7 @@ const SideDrawer = (props) => {
       </motion.div>
 
       {/* //////////////////////////////////////////////////////////////////////// */}
-    </div>
+    </motion.div>
   );
 };
 
