@@ -54,7 +54,8 @@
 .Icons {
   display: flex;
   font-size: 1.4rem;
-  padding-left: 3rem;
+  padding-left: 4rem;
+  /* background-color: brown; */
 }
 
 .Icon {
@@ -76,11 +77,11 @@
 @media (max-width: 800px) {
   .Icons {
     font-size: 2.2rem;
-    padding-left: 8rem;
+    padding-left: 1rem;
   }
 
   .Icon {
-    padding-left: 2rem;
+    padding-right: 2rem;
     transition: all 0.5s;
   }
 }

@@ -91,7 +91,7 @@ const Projects = () => {
             className={image.className}
             key={index}
             onClick={() => handleOpenModal(index)}
-            // style={{ y }}
+            style={{ y }}
           >
             <div className="grid">
               <LazyLoadImage
