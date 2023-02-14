@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import SideMenuItems from "./SideMenuItems/SideMenuItems";
 import { motion } from "framer-motion";
 
@@ -43,17 +43,31 @@ const sectionVariants = {
 };
 const SideMenu = () => {
   return (
-    <motion.div variants={childVariants} initial="hidden" animate="visible">
-      <motion.ul className="SideNavItems">
-        {" "}
+    <div
+      className="SideMItems"
+      //  variants={childVariants} initial="hidden" animate="visible"
+    >
+      <ul className="SideNavI">
         <SideMenuItems link="/">Projects</SideMenuItems>
         <SideMenuItems link="/wedding">Weddings</SideMenuItems>{" "}
+        <SideMenuItems link="/">Graduation</SideMenuItems>
         <SideMenuItems link="/wedding">Portraits</SideMenuItems>{" "}
-        <SideMenuItems link="/">Family</SideMenuItems>
-        <SideMenuItems link="/about">About</SideMenuItems>{" "}
-        <SideMenuItems link="/contact">Contact</SideMenuItems>
-      </motion.ul>
-      <motion.div className="Icons">
+        <SideMenuItems link="/about">About</SideMenuItems>
+        <SideMenuItems link="/contact">Contact</SideMenuItems>{" "}
+      </ul>
+
+      {/* <SideMenuItems link="/">Portraits</SideMenuItems>{" "}
+        <SideMenuItems link="/wedding">Portraits</SideMenuItems>{" "}
+        <li>
+          {" "}
+          <Link to="/work">Home</Link>
+        </li>
+        <li>
+          {" "}
+          <Link to="/checking">wedding</Link>
+        </li> */}
+      {/* </div> */}
+      <div className="Icons">
         <Link to="/contact">
           {" "}
           <AiOutlineInstagram className="Icon" />
@@ -66,8 +80,8 @@ const SideMenu = () => {
           {" "}
           <AiOutlineMail className="Icon" />
         </Link>
-      </motion.div>
-    </motion.div>
+      </div>
+    </div>
   );
 };
 

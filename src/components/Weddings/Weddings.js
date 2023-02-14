@@ -7,7 +7,7 @@ import Modal from "../../containers/Modal/Modal";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 import "./Weddings.css";
 
@@ -62,6 +62,9 @@ const Weddings = () => {
     setOpenModal(false);
   };
 
+  const { scrollYProgress } = useScroll();
+  const y = useTransform(scrollYProgress, [0, 1], [0, -100]);
+
   return (
     <motion.div
       className="Weddings"
@@ -87,10 +90,11 @@ const Weddings = () => {
       )}
       {weddingdata.map((image, index) => {
         return (
-          <div
+          <motion.div
             className={image.className}
             key={index}
             onClick={() => handleOpenModal(index)}
+            // style={{ y }}
           >
             <div className="grid">
               <LazyLoadImage
@@ -101,7 +105,7 @@ const Weddings = () => {
                 width="100%"
               />
             </div>
-          </div>
+          </motion.div>
         );
       })}
     </motion.div>

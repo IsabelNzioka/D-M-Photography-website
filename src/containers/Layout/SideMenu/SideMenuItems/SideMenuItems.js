@@ -4,14 +4,14 @@ import "./SideMenuItems.css";
 
 const SideMenuItems = (props) => {
   return (
-    <li className="SideMenuItem">
+    <div className="SideMenuItem">
       <NavLink
         to={props.link}
         className={({ isActive }) => (isActive ? "active" : undefined)}
       >
         {props.children}
       </NavLink>
-    </li>
+    </div>
   );
 };
 

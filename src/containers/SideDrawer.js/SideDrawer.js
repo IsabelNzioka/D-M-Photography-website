@@ -75,10 +75,10 @@ const SideDrawer = (props) => {
       animate={props.open ? "visible" : "hidden"}
     >
       <Backdrop show={props.open} clicked={props.closed} />
-      {/* <div className={attachedClasses.join(" ")} onClick={props.closed}> */}
-      {/* <SideMenu /> */}
-      {/* </div> */}
-      <motion.div className={attachedClasses.join(" ")} onClick={props.closed}>
+      <div className={attachedClasses.join(" ")} onClick={props.closed}>
+        <SideMenu />
+      </div>
+      {/* <motion.div className={attachedClasses.join(" ")} onClick={props.closed}>
         <motion.ul className="SideNavItems">
           {" "}
           <motion.div variants={childVariants}>
@@ -116,8 +116,8 @@ const SideDrawer = (props) => {
             {" "}
             <AiOutlineMail className="Icon" />
           </Link>
-        </motion.div>
-      </motion.div>
+        </motion.div> */}
+      {/* </motion.div> */}
 
       {/* //////////////////////////////////////////////////////////////////////// */}
     </motion.div>

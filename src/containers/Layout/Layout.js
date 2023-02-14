@@ -9,6 +9,8 @@ import "./Layout.css";
 import { AiOutlineMenu } from "react-icons/ai";
 import { BiMenuAltRight } from "react-icons/bi";
 import { motion } from "framer-motion";
+import SideMenuItems from "./SideMenu/SideMenuItems/SideMenuItems";
+import { Link } from "react-router-dom";
 
 const containerVariants = {
   hidden: {
@@ -56,16 +58,16 @@ const Layout = (props) => {
       </div>
 
       <div className="SideMenu">
-        <SideMenu />{" "}
+        <SideMenu />
       </div>
-      <motion.div
+      <div
         className="Children"
-        variants={containerVariants}
-        initial="hidden"
-        animate="visible"
+        // variants={containerVariants}
+        // initial="hidden"
+        // animate="visible"
       >
         {props.children}
-      </motion.div>
+      </div>
       <SideDrawer open={showDrawer} closed={closeSideDrawer} />
 
       <div className="Footer">

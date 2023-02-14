@@ -26,6 +26,7 @@
 .Wedding1 {
   border-radius: 5px;
   background-color: #f3ccff;
+  transition: all 2s cubic-bezier(0.165, 0.84, 0.44, 1);
 
   grid-column: 1 / span 4;
   grid-row: 1 / span 6;
@@ -33,6 +34,7 @@
 .Wedding2 {
   border-radius: 5px;
   background-color: #fcffe7;
+  transition: all 2s cubic-bezier(0.165, 0.84, 0.44, 1);
 
   grid-column: 5 / -1;
   grid-row: 1 / span 6;
@@ -40,6 +42,7 @@
 .Wedding3 {
   border-radius: 5px;
   background-color: #d8d9cf;
+  transition: all 2s cubic-bezier(0.165, 0.84, 0.44, 1);
 
   grid-column: 1 / span 5;
   grid-row: 7 / span 5;
@@ -47,6 +50,7 @@
 .Wedding4 {
   border-radius: 5px;
   background-color: #f5eddc;
+  transition: all 2s cubic-bezier(0.165, 0.84, 0.44, 1);
 
   grid-column: 6 / -1;
   grid-row: 7 / span 4;
@@ -54,6 +58,7 @@
 .Wedding5 {
   border-radius: 5px;
   background-color: #cff5e7;
+  transition: all 2s cubic-bezier(0.165, 0.84, 0.44, 1);
 
   grid-column: 5 / -1;
   grid-row: 12 / span 6;
@@ -61,6 +66,7 @@
 .Wedding6 {
   border-radius: 5px;
   background-color: #fce2db;
+  transition: all 2s cubic-bezier(0.165, 0.84, 0.44, 1);
 
   grid-column: 2 / span 3;
   grid-row: 12 / span 5;
@@ -68,6 +74,7 @@
 .Wedding7 {
   border-radius: 5px;
   background-color: #bfeaf5;
+  transition: all 2s cubic-bezier(0.165, 0.84, 0.44, 1);
 
   grid-column: 5 / -1;
   grid-row: 18 / span 5;
@@ -75,6 +82,7 @@
 .Wedding8 {
   border-radius: 5px;
   background-color: #cfd2cf;
+  transition: all 2s cubic-bezier(0.165, 0.84, 0.44, 1);
 
   grid-column: 1 / span 4;
   grid-row: 17 / span 5;
@@ -82,6 +90,7 @@
 .Wedding9 {
   border-radius: 5px;
   background-color: #f2e7d5;
+  transition: all 2s cubic-bezier(0.165, 0.84, 0.44, 1);
 
   grid-column: 5 / span 3;
   grid-row: 23 / span 4;
@@ -89,6 +98,7 @@
 .Wedding10 {
   border-radius: 5px;
   background-color: #def5e5;
+  transition: all 2s cubic-bezier(0.165, 0.84, 0.44, 1);
 
   grid-column: 1 / span 4;
   grid-row: 22 / span 5;
@@ -96,6 +106,7 @@
 .Wedding11 {
   border-radius: 5px;
   background-color: #faeab1;
+  transition: all 2s cubic-bezier(0.165, 0.84, 0.44, 1);
 
   grid-column: 4 / -1;
   grid-row: 27 / span 6;
@@ -103,6 +114,7 @@
 .Wedding12 {
   border-radius: 5px;
   background-color: #fff9ca;
+  transition: all 2s cubic-bezier(0.165, 0.84, 0.44, 1);
 
   grid-column: 1 / span 3;
   grid-row: 27 / span 6;
