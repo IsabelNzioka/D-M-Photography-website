@@ -13,7 +13,7 @@ const containerVariants = {
   hidden: {
     opacity: 0,
     // x: "100vw",
-    x: 100,
+    x: 200,
   },
   visible: {
     opacity: 1,
@@ -79,7 +79,7 @@ const About = () => {
         class="About3"
         initial="hidden"
         whileInView={"visible"}
-        viewport={{ once: true, amount: 1 }}
+        viewport={{ once: true, amount: 0.8 }}
       >
         <motion.div class="Photographer">
           <motion.h2 className="Heading__primary" variants={childVariants}>

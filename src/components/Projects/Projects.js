@@ -11,8 +11,8 @@ import "./Projects.css";
 const containerVariants = {
   hidden: {
     opacity: 0,
-    // x: "100vw",
-    x: 100,
+    x: "50vw",
+    // x: 200,
   },
   visible: {
     opacity: 1,
@@ -65,9 +65,9 @@ const Projects = () => {
   return (
     <motion.div
       className="Projects"
-      // variants={containerVariants}
-      // initial="hidden"
-      // animate="visible"
+      variants={containerVariants}
+      initial="hidden"
+      animate="visible"
     >
       {openModal && (
         <Modal

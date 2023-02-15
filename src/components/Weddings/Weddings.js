@@ -15,7 +15,7 @@ const containerVariants = {
   hidden: {
     opacity: 0,
     // x: "100vw",
-    x: 100,
+    x: 200,
   },
   visible: {
     opacity: 1,
