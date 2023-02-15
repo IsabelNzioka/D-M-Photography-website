@@ -32,7 +32,9 @@ const Modal = (props) => {
         </div>
         <div className="Modalbottom"></div>
 
-        <div className="CurrentImage">{props.children}</div>
+        <div className="CurrentImage">
+          <div className="TheImage">{props.children}</div>
+        </div>
       </div>
     </Aux>
   );
