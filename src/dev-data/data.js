@@ -141,7 +141,7 @@ const images = [
   {
     _id: "8",
     alt: "Beauty Photography",
-    image: "/Images/fam13.jpg",
+    image: "/Images/fam8.jpg",
     category: "Beauty Photography",
     className: "Project8",
   },
