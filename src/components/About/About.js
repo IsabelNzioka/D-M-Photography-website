@@ -79,7 +79,7 @@ const About = () => {
         class="About3"
         initial="hidden"
         whileInView={"visible"}
-        viewport={{ once: true, amount: 0.2 }}
+        viewport={{ once: true, amount: 1 }}
       >
         <motion.div class="Photographer">
           <motion.h2 className="Heading__primary" variants={childVariants}>

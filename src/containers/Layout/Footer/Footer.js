@@ -24,7 +24,7 @@ const Footer = () => {
       className="MyFooter"
       initial="hidden"
       whileInView={"visible"}
-      viewport={{ once: true, amount: 0.2 }}
+      viewport={{ once: true, amount: 1 }}
     >
       <motion.div className="Header" variants={childVariants}>
         Get In Touch
