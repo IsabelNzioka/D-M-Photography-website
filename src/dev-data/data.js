@@ -120,6 +120,7 @@ const images = [
     _id: "5",
     alt: "Graduation Photography",
     image: "/Images/fam12.jpg",
+
     category: "Graduation Photography",
     className: "Project5",
   },
