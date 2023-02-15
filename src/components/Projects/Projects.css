@@ -4,7 +4,7 @@
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(43, 10vh);
 
-  /* padding-right: 1rem; */
+  padding-right: 0.5rem;
   z-index: 0;
 }
 .grid {
@@ -219,6 +219,11 @@
   background-color: #e6b325;
 } */
 
+@media only screen and (max-width: 800px) {
+  .Projects {
+    padding-left: 0.5rem;
+  }
+}
 @media only screen and (max-width: 500px) {
   .Projects {
     grid-template-columns: repeat(8, 1fr);
