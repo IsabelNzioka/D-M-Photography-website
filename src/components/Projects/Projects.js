@@ -87,7 +87,7 @@ const Projects = () => {
       )}
       {images.map((image, index) => {
         return (
-          <div
+          <motion.div
             className={image.className}
             key={index}
             onClick={() => handleOpenModal(index)}
@@ -104,7 +104,7 @@ const Projects = () => {
               {/* <img src={image.image} alt={image.alt} /> */}
               {/* <p>{image._id}</p> */}
             </div>
-          </div>
+          </motion.div>
         );
       })}
 

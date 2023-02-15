@@ -22,7 +22,7 @@
   grid-column: 1 / span 1;
   height: 100vh;
 
-  top: 0;
+  top: 17vh;
   position: sticky;
   /* padding: 8rem 1rem; */
 }
