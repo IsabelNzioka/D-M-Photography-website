@@ -94,14 +94,14 @@ const Projects = () => {
             style={{ y }}
           >
             <div className="grid">
-              <LazyLoadImage
+              {/* <LazyLoadImage
                 effect="blur"
                 alt={image.alt}
                 height="100%"
                 src={image.image} // use normal <img> attributes as props
                 width="100%"
-              />
-              {/* <img src={image.image} alt={image.alt} /> */}
+              /> */}
+              <img src={image.image} alt={image.alt} />
               {/* <p>{image._id}</p> */}
             </div>
           </motion.div>
