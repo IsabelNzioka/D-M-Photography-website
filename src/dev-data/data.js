@@ -1,125 +1,55 @@
-// const images = [
-//   {
-//     _id: "1",
-//     alt: "Couple Photography",
-//     image: "/Images/couple1.jpg",
-//     category: "Couple Photography",
-//     className: "Project1",
-//   },
-//   {
-//     _id: "2",
-//     alt: "Children Photography",
-//     image: "/Images/kid1.jpg",
-//     className: "Project2",
-//     category: "Children Photography",
-//   },
-//   {
-//     _id: "3",
-//     alt: "Family Photography",
-//     image: "/Images/friends6.jpg",
-//     category: "Family Photography",
-//     className: "Project3",
-//   },
-//   {
-//     _id: "4",
-//     alt: "Friends Photography",
-//     image: "/Images/friends.jpg",
-//     category: "Friends Photography",
-//     className: "Project4",
-//   },
-//   {
-//     _id: "5",
-//     alt: "Graduation Photography",
-//     image: "/Images/grad.jpg",
-//     category: "Graduation Photography",
-//     className: "Project5",
-//   },
-//   {
-//     _id: "6",
-//     alt: "Photographer",
-//     image: "/Images/photographer.jpg",
-//     category: "Photographer",
-//     className: "Project6",
-//   },
+import Image1 from "../Images/fam1.jpg";
+import Image2 from "../Images/kid1.jpg";
+import Image3 from "../Images/friends6.jpg";
+import Image4 from "../Images/family31.webp";
+//
+import Image5 from "../Images/fam12.jpg";
+import Image6 from "../Images/photographer.jpg";
+import Image7 from "../Images/wedding8.webp";
+import Image8 from "../Images/fam8.jpg";
 
-//   {
-//     _id: "7",
-//     alt: "Wedding Photography",
-//     image: "/Images/wedding8.webp",
-//     category: "Wedding Photography",
-//     className: "Project7",
-//   },
-//   {
-//     _id: "8",
-//     alt: "Beauty Photography",
-//     image: "/Images/woman1.jpg",
-//     category: "Beauty Photography",
-//     className: "Project8",
-//   },
-//   {
-//     _id: "9",
-//     alt: "Couple Photography",
-//     image: "/Images/woman5.jpg",
-//     category: "Couple Photography",
-//     className: "Project9",
-//   },
-//   {
-//     _id: "10",
-//     alt: "Children Photography",
-//     image: "/Images/kid2.jpg",
-//     className: "Project10",
-//     category: "Children Photography",
-//   },
-//   {
-//     _id: "11",
-//     alt: "Family Photography",
-//     image: "/Images/family.jpg",
-//     category: "Family Photography",
-//     className: "Project11",
-//   },
-//   {
-//     _id: "12",
-//     alt: "Friends Photography",
-//     image: "/Images/friends.jpg",
-//     category: "Friends Photography",
-//     className: "Project12",
-//   },
-
-// ];
+import Image9 from "../Images/woman5.jpg";
+import Image10 from "../Images/kid2.jpg";
+import Image11 from "../Images/family.jpg";
+import Image12 from "../Images/friends.jpg";
+import Image13 from "../Images/woman2.jpg";
+import Image14 from "../Images/fam20.jpg";
+import Image15 from "../Images/woman9.jpg";
+import Image16 from "../Images/fam7.jpg";
 
 const images = [
   {
     _id: "1",
     alt: "Couple Photography",
-    image: "/Images/fam1.jpg",
+    image: Image1,
     category: "Couple Photography",
     className: "Project1",
   },
   {
     _id: "2",
     alt: "Children Photography",
-    image: "/Images/kid1.jpg",
+    image: Image2,
     className: "Project2",
     category: "Children Photography",
   },
   {
     _id: "3",
     alt: "Family Photography",
-    image: "/Images/friends6.jpg",
+    image: Image3,
     category: "Family Photography",
     className: "Project3",
   },
   {
     _id: "4",
     alt: "Friends Photography",
-    image: "/Images/family31.webp",
+    image: Image4,
     category: "Friends Photography",
     className: "Project4",
   },
   {
     _id: "5",
     alt: "Graduation Photography",
-    image: "/Images/fam12.jpg",
+    image: Image5,
 
     category: "Graduation Photography",
     className: "Project5",
@@ -127,7 +57,7 @@ const images = [
   {
     _id: "6",
     alt: "Photographer",
-    image: "/Images/photographer.jpg",
+    image: Image6,
     category: "Photographer",
     className: "Project6",
   },
@@ -135,70 +65,70 @@ const images = [
   {
     _id: "7",
     alt: "Wedding Photography",
-    image: "/Images/wedding8.webp",
+    image: Image7,
     category: "Wedding Photography",
     className: "Project7",
   },
   {
     _id: "8",
     alt: "Beauty Photography",
-    image: "/Images/fam8.jpg",
+    image: Image8,
     category: "Beauty Photography",
     className: "Project8",
   },
   {
     _id: "9",
     alt: "Couple Photography",
-    image: "/Images/woman5.jpg",
+    image: Image9,
     category: "Couple Photography",
     className: "Project9",
   },
   {
     _id: "10",
     alt: "Children Photography",
-    image: "/Images/kid2.jpg",
+    image: Image10,
     className: "Project10",
     category: "Children Photography",
   },
   {
     _id: "11",
     alt: "Family Photography",
-    image: "/Images/family.jpg",
+    image: Image11,
     category: "Family Photography",
     className: "Project11",
   },
   {
     _id: "12",
     alt: "Friends Photography",
-    image: "/Images/friends.jpg",
+    image: Image12,
     category: "Friends Photography",
     className: "Project12",
   },
   {
     _id: "13",
     alt: "Children Photography",
-    image: "/Images/woman2.jpg",
+    image: Image13,
     className: "Project13",
     category: "Children Photography",
   },
   {
     _id: "14",
     alt: "Family Photography",
-    image: "/Images/fam20.jpg",
+    image: Image14,
     category: "Family Photography",
     className: "Project14",
   },
   {
     _id: "15",
     alt: "Friends Photography",
-    image: "/Images/woman9.jpg",
+    image: Image15,
     category: "Friends Photography",
     className: "Project15",
   },
   {
     _id: "15",
     alt: "Friends Photography",
-    image: "/Images/fam7.jpg",
+    image: Image16,
     category: "Friends Photography",
     className: "Project16",
   },
