@@ -169,7 +169,7 @@
   .Projects {
     gap: 0.5rem;
     /* grid-template-columns: repeat(8, 1fr); */
-    grid-template-rows: repeat(40, 6vh);
+    grid-template-rows: repeat(39, 6vh);
   }
 
   .Project2 {
