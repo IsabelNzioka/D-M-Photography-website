@@ -3,6 +3,7 @@ import { AiOutlineMenu } from "react-icons/ai";
 import { motion } from "framer-motion";
 
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 const childVariants = {
   hidden: { opacity: 0 },
@@ -41,7 +42,9 @@ const Navbar = () => {
         animate="visible"
       >
         <motion.h1 className="Logo">
-          D<span>|</span>M Photography
+          <Link to="/">
+            D<span>|</span>M Photography
+          </Link>
         </motion.h1>{" "}
       </motion.div>
     </motion.div>

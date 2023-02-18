@@ -60,6 +60,11 @@
   color: #f88928;
 }
 
+.Logo a {
+  text-decoration: none;
+  color: inherit;
+}
+
 @media only screen and (max-width: 800px) {
   .Logo {
     /* letter-spacing: 2px; */
