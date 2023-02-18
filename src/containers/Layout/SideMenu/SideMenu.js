@@ -49,8 +49,8 @@ const SideMenu = () => {
     >
       <ul className="SideNavI">
         <SideMenuItems link="/">Projects</SideMenuItems>
+        <SideMenuItems link="/graduation">Graduation</SideMenuItems>{" "}
         <SideMenuItems link="/wedding">Weddings</SideMenuItems>{" "}
-        <SideMenuItems link="/graduation">Graduation</SideMenuItems>
         <SideMenuItems link="/wedding">Portraits</SideMenuItems>{" "}
         <SideMenuItems link="/about">About</SideMenuItems>
         <SideMenuItems link="/contact">Contact</SideMenuItems>{" "}
