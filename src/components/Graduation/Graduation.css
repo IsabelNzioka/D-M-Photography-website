@@ -180,6 +180,7 @@
 @media (max-width: 800px) {
   .Graduation {
     grid-template-rows: repeat(40, 4vh);
+    padding-left: 0.5rem;
   }
 }
 
