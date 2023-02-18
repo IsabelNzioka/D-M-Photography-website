@@ -159,6 +159,11 @@
     grid-template-rows: repeat(46, 8vh);
   }
 }
+@media only screen and (max-width: 800px) {
+  .Projects {
+    padding-left: 0.5rem;
+  }
+}
 @media only screen and (max-width: 700px) {
   .Projects {
     grid-template-rows: repeat(46, 6vh);
@@ -236,11 +241,6 @@
   background-color: #e6b325;
 } */
 
-@media only screen and (max-width: 800px) {
-  .Projects {
-    padding-left: 0.5rem;
-  }
-}
 @media only screen and (max-width: 500px) {
   .Projects {
     /* grid-template-columns: repeat(8, 1fr);
@@ -248,8 +248,8 @@
   }
 }
 
-@media only screen and (max-width: 310px) {
+@media only screen and (max-width: 330px) {
   .Projects {
-    /* grid-template-rows: repeat(40, 6vh); */
+    grid-template-rows: repeat(39, 5vh);
   }
 }

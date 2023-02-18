@@ -5,6 +5,7 @@ import Layout from "./containers/Layout/Layout";
 import Projects from "./components/Projects/Projects";
 import Weddings from "./components/Weddings/Weddings";
 import About from "./components/About/About";
+import Graduation from "./components/Graduation/Graduation";
 
 import Checking from "./components/Checking";
 import Work from "./components/Work";
@@ -20,7 +21,7 @@ function App() {
 
       {/* <Route path="/checking" element={<Checking />} />
       <Route path="/work" element={<Work />} /> */}
-
+      <Route path="/graduation" element={<Graduation />} />
       <Route path="/wedding" element={<Weddings />} />
       <Route path="/about" element={<About />} />
       <Route path="/contact/*" element={<Contact />} />

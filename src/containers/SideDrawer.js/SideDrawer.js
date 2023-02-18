@@ -91,10 +91,10 @@ const SideDrawer = (props) => {
           </motion.div>
           <motion.div onClick={props.closed}>
             {" "}
-            <SideMenuItems link="/wedding">Portraits</SideMenuItems>{" "}
+            <SideMenuItems link="/graduation">Graduation</SideMenuItems>{" "}
           </motion.div>
           <motion.div onClick={props.closed}>
-            <SideMenuItems link="/">Family</SideMenuItems>
+            <SideMenuItems link="/portraits">Portraits</SideMenuItems>
           </motion.div>
           <motion.div onClick={props.closed}>
             <SideMenuItems link="/about">About</SideMenuItems>{" "}

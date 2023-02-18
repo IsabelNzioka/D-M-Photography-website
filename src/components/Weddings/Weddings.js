@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 
-import weddingdata from "../../containers/dev-data/weddingdata";
+// import GradImages from "../../containers/dev-data/weddingdata";
+
+import GradImages from "../../containers/dev-data/graduation";
 
 import Modal from "../../containers/Modal/Modal";
 
@@ -42,7 +44,7 @@ const Weddings = () => {
 
   //next image
   const nextSlide = () => {
-    slideNumber + 1 === weddingdata.length
+    slideNumber + 1 === GradImages.length
       ? setSlideNumber(0)
       : setSlideNumber(slideNumber + 1);
   };
@@ -55,7 +57,7 @@ const Weddings = () => {
   //previous image
   const prevSlide = () => {
     slideNumber === 0
-      ? setSlideNumber(weddingdata.length - 1)
+      ? setSlideNumber(GradImages.length - 1)
       : setSlideNumber(slideNumber - 1);
   };
   const closeModal = () => {
@@ -81,14 +83,14 @@ const Weddings = () => {
         >
           <div className="FullImage">
             <img
-              src={weddingdata[slideNumber].image}
-              alt={weddingdata[slideNumber].alt}
+              src={GradImages[slideNumber].image}
+              alt={GradImages[slideNumber].alt}
             />
             {/* <h1>HI</h1> */}
           </div>
         </Modal>
       )}
-      {weddingdata.map((image, index) => {
+      {GradImages.map((image, index) => {
         return (
           <motion.div
             className={image.className}
