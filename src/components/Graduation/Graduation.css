@@ -176,3 +176,15 @@
     grid-row: 35 / span 6;
   }
 }
+
+@media (max-width: 800px) {
+  .Graduation {
+    grid-template-rows: repeat(40, 4vh);
+  }
+}
+
+@media (max-width: 600px) {
+  .Graduation {
+    grid-template-rows: repeat(40, 3vh);
+  }
+}
