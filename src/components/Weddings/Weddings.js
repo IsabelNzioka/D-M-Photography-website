@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import weddingdata from "../../dev-data/weddingdata";
+import weddingdata from "../../containers/dev-data/weddingdata";
 
 import Modal from "../../containers/Modal/Modal";
 

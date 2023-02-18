@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 // import weddingdata from "../../dev-data/weddingdata";
-import images from "../../dev-data/data";
+import images from "../../containers/dev-data/data";
 
 import Modal from "../../containers/Modal/Modal";
 
