@@ -106,6 +106,7 @@ const Projects = () => {
                 width="100%"
               /> */}
               <img src={image.image} alt={image.image} />
+              {/* <h1>{image._id}</h1> */}
             </div>
           </motion.div>
         );

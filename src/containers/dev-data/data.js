@@ -1,22 +1,22 @@
 import Image1 from "../../Images/snap1.jpg";
-import Image2 from "../../Images/snap1.jpg";
-import Image3 from "../../Images/snap1.jpg";
-import Image4 from "../../Images/snap1.jpg";
+import Image2 from "../../Images/snap2.webp";
+import Image3 from "../../Images/snap22.webp";
+import Image4 from "../../Images/snap19.webp";
 
 // import Ima from '../../Images/snap1.jpg'
-import Image5 from "../../Images/snap1.jpg";
-import Image6 from "../../Images/snap1.jpg";
-import Image7 from "../../Images/snap1.jpg";
-import Image8 from "../../Images/snap1.jpg";
+import Image5 from "../../Images/snap5.jpg";
+import Image6 from "../../Images/snap20.webp";
+import Image7 from "../../Images/snap7.webp";
+import Image8 from "../../Images/snap8.jpg";
 
-import Image9 from "../../Images/snap1.jpg";
-import Image10 from "../../Images/snap1.jpg";
-import Image11 from "../../Images/snap1.jpg";
-import Image12 from "../../Images/snap1.jpg";
-import Image13 from "../../Images/snap1.jpg";
-import Image14 from "../../Images/snap1.jpg";
-import Image15 from "../../Images/snap1.jpg";
-import Image16 from "../../Images/snap1.jpg";
+import Image9 from "../../Images/snap17.webp";
+import Image10 from "../../Images/snap26.webp";
+import Image11 from "../../Images/snap23.webp";
+import Image12 from "../../Images/snap12.jpg";
+import Image13 from "../../Images/snap13.webp";
+import Image14 from "../../Images/snap14.webp";
+import Image15 from "../../Images/snap15.jpg";
+import Image16 from "../../Images/snap26.webp";
 
 const images = [
   {
@@ -127,7 +127,7 @@ const images = [
     className: "Project15",
   },
   {
-    _id: "15",
+    _id: "16",
     alt: "Friends Photography",
     image: Image16,
     category: "Friends Photography",

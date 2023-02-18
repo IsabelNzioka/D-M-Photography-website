@@ -2,7 +2,7 @@
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(43, 10vh);
+  grid-template-rows: repeat(46, 10vh);
 
   padding-right: 0.5rem;
   /* z-index: 0; */
@@ -40,7 +40,7 @@
   background-color: #eeeeee;
   transition: all 2s cubic-bezier(0.165, 0.84, 0.44, 1);
   grid-column: 1 / span 4;
-  grid-row: 6 / span 4;
+  grid-row: 6 / span 5;
   border-radius: 5px;
 }
 
@@ -48,7 +48,7 @@
   background-color: #b9fff8;
   transition: all 2s cubic-bezier(0.165, 0.84, 0.44, 1);
   grid-column: 5 / -1;
-  grid-row: 9 / span 4;
+  grid-row: 9 / span 5;
   border-radius: 5px;
 }
 
@@ -56,7 +56,7 @@
   background-color: #fce2db;
   transition: all 2s cubic-bezier(0.165, 0.84, 0.44, 1);
   grid-column: 1 / span 4;
-  grid-row: 10 / span 6;
+  grid-row: 11 / span 6;
   border-radius: 5px;
 }
 
@@ -64,54 +64,61 @@
   background-color: #cfd2cf;
   transition: all 2s cubic-bezier(0.165, 0.84, 0.44, 1);
   grid-column: 5 / -1;
-  grid-row: 13 / span 3;
+  grid-row: 14 / span 5;
   border-radius: 5px;
+
+  z-index: 20;
 }
 
 .Project7 {
   background-color: #ffe5f1;
   transition: all 2s cubic-bezier(0.165, 0.84, 0.44, 1);
-  grid-column: 1 / span 5;
-  grid-row: 16 / span 5;
+  grid-column: 1 / span 4;
+  grid-row: 17 / span 6;
   border-radius: 5px;
 }
 
 .Project8 {
   background-color: #d4f6cc;
   transition: all 2s cubic-bezier(0.165, 0.84, 0.44, 1);
-  grid-column: 6 / -1;
-  grid-row: 16 / span 6;
+  grid-column: 5 / -1;
+  grid-row: 19 / span 5;
   border-radius: 5px;
+  z-index: 30;
 }
 
 .Project9 {
   background-color: #ffdaaf;
   transition: all 2s cubic-bezier(0.165, 0.84, 0.44, 1);
-  grid-column: 2 / span 4;
-  grid-row: 21 / span 5;
+  grid-column: 1 / span 5;
+  grid-row: 24 / span 6;
   border-radius: 5px;
+
+  z-index: 10;
 }
 
 .Project10 {
   background-color: #f3ccff;
   transition: all 2s cubic-bezier(0.165, 0.84, 0.44, 1);
   grid-column: 6 / -1;
-  grid-row: 22 / span 5;
+  grid-row: 24 / span 5;
   border-radius: 5px;
+
+  z-index: 10;
 }
 
 .Project11 {
   background-color: #f4ead5;
   transition: all 2s cubic-bezier(0.165, 0.84, 0.44, 1);
   grid-column: 1 / span 5;
-  grid-row: 26 / span 6;
+  grid-row: 30 / span 6;
   border-radius: 5px;
 }
 .Project12 {
   background-color: #e6cfee;
   transition: all 2s cubic-bezier(0.165, 0.84, 0.44, 1);
   grid-column: 6 / -1;
-  grid-row: 27 / span 4;
+  grid-row: 29 / span 7;
   border-radius: 5px;
 }
 
@@ -120,7 +127,7 @@
   transition: all 2s cubic-bezier(0.165, 0.84, 0.44, 1);
   grid-column: 5 / -1;
 
-  grid-row: 32 / span 6;
+  grid-row: 36 / span 6;
   border-radius: 5px;
 }
 
@@ -129,29 +136,40 @@
   transition: all 2s cubic-bezier(0.165, 0.84, 0.44, 1);
   grid-column: 1 / span 4;
 
-  grid-row: 32 / span 5;
+  grid-row: 36 / span 5;
   border-radius: 5px;
 }
 .Project15 {
   background-color: #f8d4d4;
   transition: all 2s cubic-bezier(0.165, 0.84, 0.44, 1);
   grid-column: 1 / span 4;
-  grid-row: 37 / span 6;
+  grid-row: 41 / span 6;
   border-radius: 5px;
 }
 .Project16 {
   background-color: #eabbf8;
   transition: all 2s cubic-bezier(0.165, 0.84, 0.44, 1);
   grid-column: 5 / -1;
-  grid-row: 38 / span 5;
+  grid-row: 42 / span 5;
   border-radius: 5px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .Projects {
+    grid-template-rows: repeat(46, 8vh);
+  }
+}
+@media only screen and (max-width: 700px) {
+  .Projects {
+    grid-template-rows: repeat(46, 6vh);
+  }
 }
 
 @media only screen and (max-width: 600px) {
   .Projects {
     gap: 0.5rem;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(40, 9vh);
+    /* grid-template-columns: repeat(8, 1fr); */
+    grid-template-rows: repeat(40, 6vh);
   }
 
   .Project2 {
@@ -160,30 +178,30 @@
   }
 
   .Project4 {
-    /* background-color: #cf0a0a; */
     grid-column: 5 / -1;
-    grid-row: 8 / span 4;
+    grid-row: 7 / span 4;
   }
   .Project6 {
-    /* background-color: #ada2ff; */
     grid-column: 5 / -1;
     grid-row: 12 / span 4;
   }
+  .Project7 {
+    grid-row: 17 / span 5;
+  }
 
   .Project8 {
-    /* background-color: #f49d1a; */
-    grid-column: 6 / -1;
-    grid-row: 16 / span 4;
+    grid-column: 5 / -1;
+    grid-row: 16 / span 5;
   }
   .Project9 {
-    /* background-color: #dc3535; */
     grid-column: 1 / span 4;
-    grid-row: 21 / span 4;
+    grid-row: 22 / span 4;
+    z-index: 45;
   }
   .Project10 {
-    /* background-color: #863a6f; */
     grid-column: 5 / -1;
     grid-row: 21 / span 5;
+    z-index: 50;
   }
 
   .Project11 {
@@ -191,7 +209,6 @@
     grid-row: 26 / span 4;
   }
   .Project12 {
-    /* background-color: #fecd70; */
     grid-column: 6 / -1;
     grid-row: 26 / span 4;
   }
@@ -226,13 +243,13 @@
 }
 @media only screen and (max-width: 500px) {
   .Projects {
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(40, 8vh);
+    /* grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(40, 8vh); */
   }
 }
 
 @media only screen and (max-width: 310px) {
   .Projects {
-    grid-template-rows: repeat(40, 6vh);
+    /* grid-template-rows: repeat(40, 6vh); */
   }
 }
