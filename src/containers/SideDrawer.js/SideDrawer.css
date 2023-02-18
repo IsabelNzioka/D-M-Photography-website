@@ -34,7 +34,9 @@
   .SideDrawer {
     position: fixed;
     width: 300px;
-    max-width: 50%;
+    max-width: 70%;
+    /* background-color: blanchedalmond; */
+    padding: 20vh 1rem;
   }
 }
 

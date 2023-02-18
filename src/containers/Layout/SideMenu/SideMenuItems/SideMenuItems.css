@@ -27,11 +27,13 @@
     padding-bottom: 2rem;
     text-align: left;
     font-size: 1.2rem;
+    /* background-color: #000000; */
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .SideMenuItem {
+    padding-bottom: 1rem;
     /* padding-bottom: 1rem;
     font-size: 1.1rem; */
   }
