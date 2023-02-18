@@ -1,5 +1,7 @@
 import React from "react";
 
+import photographer1 from "../../Images/dennis2.jpg";
+import photographer2 from "../../Images/dennis.jpg";
 // import photographer from "../Images/couple1.jpg";
 // import photographer from "../../../public/Images/couple1.jpg";
 import SliderTestimonials from "../../containers/Slider/SliderTestimonials/SliderTestimonials";
@@ -54,7 +56,7 @@ const About = () => {
             effect="blur"
             alt="The Photographer"
             height="100%"
-            src="Images/dennis.jpg" // use normal <img> attributes as props
+            src={photographer2} // use normal <img> attributes as props
             width="100%"
           />
 
@@ -68,7 +70,7 @@ const About = () => {
             effect="blur"
             alt="The Photographer"
             height="100%"
-            src="Images/dennis2.jpg" // use normal <img> attributes as props
+            src={photographer1} // use normal <img> attributes as props
             width="100%"
           />
           {/* <img src="Images/dennis2.jpg" alt="The Photographer" /> */}

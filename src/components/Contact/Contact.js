@@ -2,6 +2,8 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 // import { useForm } from "react-hook-form";
 
+import lady from "../../Images/snap24.jpg";
+
 import Input from "./Input/Input";
 import Success from "./Success/Success";
 
@@ -238,9 +240,10 @@ const Contact = () => {
     >
       <div className="ContactPicture">
         <div className="grid">
-          <img src="Images/woman4.jpg" alt="Potraits" />
+          <img src={lady} alt="Potraits" />
         </div>
       </div>
+
       {element}
     </motion.div>
   );

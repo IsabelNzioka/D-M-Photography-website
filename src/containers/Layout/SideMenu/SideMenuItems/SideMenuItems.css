@@ -1,5 +1,5 @@
 .SideMenuItem {
-  padding: 0.2rem 1rem 0.2rem 0rem;
+  padding: 0.2rem 2rem 0.2rem 0rem;
   /* background-color: aquamarine; */
   font-size: 1rem;
   /* width: 100%; */
@@ -25,14 +25,14 @@
 @media (max-width: 800px) {
   .SideMenuItem {
     padding-bottom: 2rem;
-    text-align: center;
+    text-align: left;
     font-size: 1.2rem;
   }
 }
 
 @media (max-width: 400px) {
   .SideMenuItem {
-    padding-bottom: 1rem;
-    font-size: 1.1rem;
+    /* padding-bottom: 1rem;
+    font-size: 1.1rem; */
   }
 }
