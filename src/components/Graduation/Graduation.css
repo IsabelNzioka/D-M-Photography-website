@@ -186,5 +186,6 @@
 @media (max-width: 600px) {
   .Graduation {
     grid-template-rows: repeat(40, 3vh);
+    gap: 0.5rem;
   }
 }
