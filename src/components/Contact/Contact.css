@@ -127,6 +127,18 @@ textarea {
   form {
     padding-left: 1rem;
   }
+
+  .ContactPicture {
+    grid-column: 1 / -1;
+
+    grid-row: 1 / span 6;
+  }
+
+  .ContactForm {
+    /* background-color: #f88928; */
+    grid-column: 1 / -1;
+    grid-row: 7 / span 7;
+  }
   .SuccessParagraph {
     padding: 2rem;
     font-size: 1;
