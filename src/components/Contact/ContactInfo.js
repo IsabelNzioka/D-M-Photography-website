@@ -5,6 +5,8 @@ import emailjs from "@emailjs/browser";
 import Input from "./Input/Input";
 import Success from "./Success/Success";
 
+import { motion } from "framer-motion";
+
 import {
   Routes,
   Route,
@@ -19,6 +21,16 @@ import {
 } from "react-router-dom";
 
 import "./Contact.css";
+
+const childVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+
+    transition: { duration: 1 },
+    // transition={ease: [0.17, 0.67, 0.83, 0.67] },
+  },
+};
 
 const ContactInfo = () => {
   const form = useRef();
@@ -184,8 +196,14 @@ const ContactInfo = () => {
   };
 
   return (
-    <div className="ContactForm">
-      <form ref={form} onSubmit={sendEmail}>
+    <motion.div
+      className="ContactForm"
+      transition={{ staggerChildren: 0.4 }}
+      initial="hidden"
+      whileInView={"visible"}
+      viewport={{ once: true, amount: 0.2 }}
+    >
+      <motion.form ref={form} onSubmit={sendEmail} variants={childVariants}>
         {formElementArray.map((formElement) => (
           <Input
             key={formElement.id}
@@ -210,8 +228,8 @@ const ContactInfo = () => {
           Submit
         </button>
         {/* <input type="submit" value="Send" /> */}
-      </form>
-    </div>
+      </motion.form>
+    </motion.div>
   );
 };
 
