@@ -76,7 +76,7 @@ hr {
     gap: 1rem;
   }
   .Copyright {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
   .FooterIcons {
     gap: 1rem;
@@ -84,13 +84,18 @@ hr {
 
   .Mail {
     font-weight: 400;
-    letter-spacing: 1.1px;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
   }
 }
 
 @media (max-width: 400px) {
   .MyFooter {
     padding: 4rem 1rem 1rem;
+  }
+  .ToContact {
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
   }
 
   .Copyright {
@@ -99,9 +104,5 @@ hr {
 
   .FooterIcons {
     font-size: 1.4rem;
-  }
-
-  .ToContact {
-    font-size: 0.9rem;
   }
 }
