@@ -1,12 +1,17 @@
-Input {
-  width: 100%;
+.Input {
+  /* width: 100%;
   padding: 2rem;
-  box-sizing: border-box;
+  box-sizing: border-box; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* background-color: #e46759; */
 }
 .Label {
-  font-weight: bold;
+  /* font-weight: bold; */
   display: block;
   margin-bottom: 8px;
+  /* justify-self: flex-start; */
 }
 
 /* input */
@@ -18,6 +23,8 @@ Input {
 
   background-color: white;
   font: inherit;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
 
   display: block;
   width: 100%;

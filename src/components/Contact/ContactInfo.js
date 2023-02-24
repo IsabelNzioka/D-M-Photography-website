@@ -38,6 +38,7 @@ const ContactInfo = () => {
   const [contactForm, setContactForm] = useState({
     name: {
       elementType: "input",
+      label: "Name",
       elementConfig: {
         type: "text",
         placeholder: "Name",
@@ -54,6 +55,7 @@ const ContactInfo = () => {
     },
     email: {
       elementType: "input",
+      label: "Email",
       elementConfig: {
         type: "email",
 
@@ -69,9 +71,10 @@ const ContactInfo = () => {
     },
     mobile: {
       elementType: "input",
+      label: "Phone Number",
       elementConfig: {
         type: "tel",
-        placeholder: "Your Mobile",
+        placeholder: "0700000000",
         validname: "user_mobile",
       },
       value: "",
@@ -82,8 +85,29 @@ const ContactInfo = () => {
       valid: false,
       touched: false,
     },
+    deliveryMethod: {
+      elementType: "select",
+      label: "What type of sessions are you looking For?",
+      elementConfig: {
+        options: [
+          { value: "wedding", displayValue: "Wedding" },
+          { value: "portrait", displayValue: "Portrait" },
+          { value: "engagement", displayValue: "Engagement" },
+          { value: "couple", displayValue: "Couple Session" },
+          { value: "maternity", displayValue: "Maternity" },
+          { value: "newborn", displayValue: "Newborn Session" },
+          { value: "graduation", displayValue: "Graduation Session" },
+          { value: "special", displayValue: "Special Inquiry" },
+        ],
+        validname: "user_session",
+      },
+      value: "",
+      validation: {},
+      valid: true,
+    },
     message: {
       elementType: "textarea",
+      label: "Message",
       elementConfig: {
         type: "text",
         placeholder: "Your Message",
@@ -226,6 +250,7 @@ const ContactInfo = () => {
             elementType={formElement.config.elementType}
             elementConfig={formElement.config.elementConfig}
             value={formElement.config.value}
+            label={formElement.config.label}
             invalid={!formElement.config.valid}
             // shouldValidate={formElement.config.validation}
             touched={formElement.config.touched}
