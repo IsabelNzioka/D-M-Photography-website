@@ -26,9 +26,9 @@ const Footer = () => {
       whileInView={"visible"}
       viewport={{ once: false, amount: 0.3 }}
     >
-      <motion.div className="Header" variants={childVariants}>
+      {/* <motion.div className="Header" variants={childVariants}>
         Get In Touch
-      </motion.div>
+      </motion.div> */}
       <motion.div className="FooterIcons" variants={childVariants}>
         <Link to="/contact">
           {" "}
@@ -45,7 +45,8 @@ const Footer = () => {
         </button>
       </motion.div>
       <motion.div className="Mail" variants={childVariants}>
-        dennis@gmail.com
+        <a href="mailto:isabelnzioka@gmail.com"> dennisMutembei@gmail.com</a>
+        <a href="tel:0742454034">0742454034</a>
       </motion.div>
 
       <div className="Copyright">

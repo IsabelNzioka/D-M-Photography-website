@@ -38,7 +38,7 @@ const ContactInfo = () => {
   const [contactForm, setContactForm] = useState({
     name: {
       elementType: "input",
-      label: "Name",
+      label: "Name:",
       elementConfig: {
         type: "text",
         placeholder: "Name",
@@ -55,7 +55,7 @@ const ContactInfo = () => {
     },
     email: {
       elementType: "input",
-      label: "Email",
+      label: "Email:",
       elementConfig: {
         type: "email",
 
@@ -71,7 +71,7 @@ const ContactInfo = () => {
     },
     mobile: {
       elementType: "input",
-      label: "Phone Number",
+      label: "Phone Number:",
       elementConfig: {
         type: "tel",
         placeholder: "0700000000",
@@ -107,7 +107,7 @@ const ContactInfo = () => {
     },
     message: {
       elementType: "textarea",
-      label: "Message",
+      label: "Message:",
       elementConfig: {
         type: "text",
         placeholder: "Your Message",
