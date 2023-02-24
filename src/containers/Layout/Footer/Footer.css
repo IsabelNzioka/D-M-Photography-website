@@ -97,9 +97,14 @@ hr {
     padding: 0.4rem 1rem;
     font-size: 0.9rem;
   }
+  .Mail {
+    /* font-weight: 400; */
+    letter-spacing: 0px;
+    font-size: 0.8rem;
+  }
 
   .Copyright {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
   }
 
   .FooterIcons {
