@@ -229,6 +229,7 @@ const ContactInfo = () => {
         },
         (error) => {
           console.log(error.text);
+          console.log("Fill the text");
         }
       );
 
@@ -266,7 +267,7 @@ const ContactInfo = () => {
           // onClick={handleClick}
         >
           {" "}
-          Submit
+          {formIsValid ? "Submit" : "All fields must be filled out"}
         </button>
         {/* <input type="submit" value="Send" /> */}
       </motion.form>
