@@ -184,15 +184,31 @@ const ContactInfo = () => {
       )
       .then(
         (result) => {
-          console.log(result.text);
+          console.log(result);
           console.log("Message sent");
+          form.current.reset();
+          // e.target.reset();
+          // for (let i = 0; i < 4; i++) {
+          console.log(e.target);
+
+          //   e.target[i].value = "";
+          // }
+          // formElementArray.map(
+          //   (formElement) => {
+          //     formElement.config.value = "";
+
+          //     return console.log(formElement.config);
+          //   }
+
+          // );
+          navigate("contact/success");
         },
         (error) => {
           console.log(error.text);
         }
       );
 
-    // e.target.reset();
+    //
   };
 
   return (
@@ -222,7 +238,7 @@ const ContactInfo = () => {
           type="submit"
           className="ButtonSubmit"
           disabled={!formIsValid}
-          onClick={handleClick}
+          // onClick={handleClick}
         >
           {" "}
           Submit
